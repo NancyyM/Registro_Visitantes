@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Registro de usuarios</title>
+    </head>
+    <body>
+        <div class=" container">
+            <header>
+                <h1>Registrate</h1>
+            </header>
+            <main>
+                <section class="container-fluid">
+                    <form id = "form-signup">
+                        <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+                            <label for="input-name">Ingresa tu nombre</label>
+                            <input type="text" class="form-control" name = "name" id="input-name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+                            <label for="input-email">Ingresa tu correo electrónico</label>
+                            <input type="email" class="form-control" name = "email" id="input-email" placeholder="Coreo electrónico">
+                        </div>
+                        <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+                            <label for="input">Empresa a la que visitas</label>
+                            <input type="password" class="form-control" name = "company" id="input-company" placeholder="Empresa">
+                        </div>
+                        <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+                            <label for="input-visitado">Persona a la que visitas</label>
+                            <input type="text" class="form-control" name = "visited" id="input-visited" placeholder="Nombre">
+                        </div>
+                        <section class="row offset-lg-5 col-sm-1 col-lg-3">
+                            <button type="submit"  id="log-in">Enviar</button>
+                        </section>
+                        <section class=" row offset-lg-4 col-sm-2 col-lg-3">
+                            <p><a href="">Regresar</a></p>
+                        </section>
+                    </form>
+                </section>
+            </main>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/index.js"></script>
+    </body>
+</html>
