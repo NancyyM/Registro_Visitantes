@@ -15,13 +15,21 @@ let player = document.getElementById('player');
     context.drawImage(player, 0, 0, snapshotCanvas.width, 
         snapshotCanvas.height);
 
+        let imageDataURL = snapshotCanvas.toDataURL();
+
+// Create a root reference
+let storageRef = firebase.storage().ref();
+let images = storageRef.child('Images');
+
+images.putString(imageDataURL, 'data_url').then(function(snapshot) {
+  console.log('Uploaded a data_url string!');
+});
+
         // Stop all video streams.
     videoTracks.forEach(function(track) {track.stop()});
   });
 
+//Detiene la camara cuando se toma la foto
   navigator.mediaDevices.getUserMedia({video: true})
       .then(handleSuccess);
 
-  let imageDataURL = hidden_canvas.toDataURL('image/png');
-      // Set the dataURL as source of an image element, showing the captured photo.
-      image.setAttribute('src', imageDataURL); 
