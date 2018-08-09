@@ -9,34 +9,49 @@ const nextButton = document.getElementById('next-button');
 // Create objet for visitor data
 const visitorData = {};
 
+// Listen to visitor name
+inputName.addEventListener('keyup', () => {
+  visitorName = inputName.value.trim().toUpperCase();
+  inputName.value = visitorName;
+  if (visitorName != '') {
+    inputLastName.removeAttribute('disabled');
+    visitorData.name = visitorName;
+    // let nameAndLastName = listenInputLastName(visitorData);
+    uploadVisitorName(visitorData.name);
+  };
+});
+
 // Add listener to buttons
 returnButton.addEventListener('click', () => {
   window.location.assign('../index.html');
 });
 
 nextButton.addEventListener('click', () => {
-  console.log('holi');
-});
-
-// Listen to visitor name
-inputName.addEventListener('keyup', () => {
-  visitorName = inputName.value.trim();
-  if (visitorName != '') {
-    inputLastName.removeAttribute('disabled');
-    visitorData.name = visitorName;
-    // console.log(visitorData);
-    listenInputLastName(visitorData);
-  };
+  window.location.assign('../views/splash.html');
 });
 
 // Listen to visitor last name
-const listenInputLastName = (visitorData) => {
-  inputLastName.addEventListener('keyup', () => {
-    visitorLastName = inputLastName.value.trim();
-    if (visitorLastName != '') {
-      visitorData.lastname = visitorLastName;
-      nextButton.classList.remove('disabled');
-      console.log(visitorData);
-    };
+inputLastName.addEventListener('keyup', () => {
+  visitorLastName = inputLastName.value.toUpperCase().trim();
+  inputLastName.value = inputLastName.value.toUpperCase();
+  if (visitorLastName != '') {
+    visitorData.lastname = visitorLastName;
+    nextButton.classList.remove('disabled');
+    uploadVisitorLastName(visitorLastName);
+  };
+});
+
+
+const splashPhoto = (visitorData) => {
+  nextButton.addEventListener('click', () => {
+    console.log(visitorData);
   });
+};
+
+const uploadVisitorName = (visitorName) => {
+  localStorage.setItem('visitorName', visitorName);
+};
+
+const uploadVisitorLastName = (visitorLatName) => {
+  localStorage.setItem('visitorLastName', visitorLastName);
 };

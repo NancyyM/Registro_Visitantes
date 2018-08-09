@@ -28,9 +28,14 @@ margin-bottom: auto;
 }
 
 #return-button,
-#next-button {
+#next-button,
+#return-button-splash,
+#next-button-splash {
   background: #007bff;
   color:#ffffff;
 }
 
+.vertical-center {
+  margin: auto;
+}
 
