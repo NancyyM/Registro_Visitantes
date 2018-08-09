@@ -27,7 +27,8 @@ margin-bottom: auto;
   line-height: 1.33;
 }
 
-#return-button {
+#return-button,
+#next-button {
   background: #007bff;
   color:#ffffff;
 }
