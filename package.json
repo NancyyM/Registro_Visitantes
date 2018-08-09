@@ -1,0 +1,40 @@
+{
+  "name": "registro_visitantes",
+  "version": "0.1.0",
+  "description": "web app to register visitors",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "build": "babel src -d lib",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NancyyM/Registro_Visitantes.git"
+  },
+  "keywords": [
+    "webapp",
+    "DOM",
+    "firebase",
+    "database"
+  ],
+  "author": "Nancy, Ana y Citlalli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NancyyM/Registro_Visitantes/issues"
+  },
+  "homepage": "https://github.com/NancyyM/Registro_Visitantes#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.2"
+  },
+  "dependencies": {
+    "htmlhint": "^0.9.13"
+  }
+}

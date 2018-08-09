@@ -1,0 +1,35 @@
+#initial-view {
+margin-top: 10%;
+margin-bottom: auto;
+}
+
+#logo-coworking {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.head-card {
+  background:#f8f9fa;
+  height: 10vh;
+  padding: 10px;
+}
+
+.middle {
+  margin-top: 25%;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+#return-button {
+  background: #007bff;
+  color:#ffffff;
+}
+
+
