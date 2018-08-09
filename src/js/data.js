@@ -11,8 +11,18 @@ window.getCompaniesEmployees = (dataCompanies) => {
 
   for (const companie in dataCompanies) {
     let employeeCompanie = companie;
-    const employeeName = Object.values(dataCompanies[companie].empleados);
     console.log(employeeCompanie);
-    console.log(employeeName);
+    const employeesNames = Object.values(dataCompanies[companie].empleados);
+    employeesNames.forEach(employee => {
+      let employeeName = employee.nombre;
+      let employeeEmail = employee.correo;
+      employeesArray.push({
+        name: employeeName,
+        companie: employeeCompanie,
+        email: employeeEmail
+      });
+    });
   }
+  // console.log(employeesArray);
+  return employeesArray;
 };
