@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro de usuarios</title>
+</head>
+
+<body>
+  <div class=" container">
+    <header>
+      <h1>Registrate</h1>
+    </header>
+    <main>
+      <section class="container-fluid">
+        <form id="form-signup">
+          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+            <label for="input-name">Ingresa tu nombre</label>
+            <input type="text" class="form-control" name="name" id="input-name" placeholder="Nombre">
+          </div>
+          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+            <label for="input-email">Ingresa tu correo electrónico</label>
+            <input type="email" class="form-control" name="email" id="input-email" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+            <label for="input-company">Empresa a la que visitas</label>
+            <select class="form-control" id="input-company">
+              <option value="Sede" disabled selected>Empresa</option>
+            </select>
+          </div>
+          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
+            <label for="input-visitado">Persona a la que visitas</label>
+            <input type="text" class="form-control" name="visited" id="input-visited" placeholder="Nombre">
+          </div>
+          <section class="row offset-lg-5 col-sm-1 col-lg-3">
+            <button type="button" id="log-in">Enviar</button>
+          </section>
+          <section class=" row offset-lg-4 col-sm-2 col-lg-3">
+            <p>
+              <a href="">Regresar</a>
+            </p>
+          </section>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+
+</html>
