@@ -1,3 +1,7 @@
+html {
+  height: 100vh;
+}
+
 #initial-view {
 margin-top: 10%;
 margin-bottom: auto;
