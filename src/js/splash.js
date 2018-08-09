@@ -29,6 +29,8 @@ returnButtonSplash.addEventListener('click', () => {
   window.location.assign('../views/register.html');
 });
 
+
+window.onload = getDataVisitor();
 nextButtonSplash.addEventListener('click', () => {
-  window.location.assign('../views/host.html');
-});
+  window.location.assign('../views/player.html');
+})
