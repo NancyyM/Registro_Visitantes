@@ -4,3 +4,7 @@ window.data = {
     console.log(companies);
   },
 };
+
+window.uploadData = (visitorData) => {
+  console.log(visitorData);
+};

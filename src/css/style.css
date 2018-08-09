@@ -27,9 +27,15 @@ margin-bottom: auto;
   line-height: 1.33;
 }
 
-#return-button {
+#return-button,
+#next-button,
+#return-button-splash,
+#next-button-splash {
   background: #007bff;
   color:#ffffff;
 }
 
+.vertical-center {
+  margin: auto;
+}
 
