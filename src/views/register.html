@@ -5,50 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Registro de usuarios</title>
+  <title>Co-Working | Registro</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <div class=" container">
-    <header>
-      <h1>Registrate</h1>
-    </header>
-    <main>
-      <section class="container-fluid">
-        <form id="form-signup">
-          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
-            <label for="input-name">Ingresa tu nombre</label>
-            <input type="text" class="form-control" name="name" id="input-name" placeholder="Nombre">
-          </div>
-          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
-            <label for="input-email">Ingresa tu correo electrónico</label>
-            <input type="email" class="form-control" name="email" id="input-email" placeholder="Correo electrónico">
-          </div>
-          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
-            <label for="input-company">Empresa a la que visitas</label>
-            <select class="form-control" id="input-company">
-              <option value="Sede" disabled selected>Empresa</option>
-            </select>
-          </div>
-          <div class="form-group offset-lg-3 col-sm-10 col-lg-6">
-            <label for="input-visitado">Persona a la que visitas</label>
-            <input type="text" class="form-control" name="visited" id="input-visited" placeholder="Nombre">
-          </div>
-          <section class="row offset-lg-5 col-sm-1 col-lg-3">
-            <button type="button" id="log-in">Enviar</button>
-          </section>
-          <section class=" row offset-lg-4 col-sm-2 col-lg-3">
-            <p>
-              <a href="">Regresar</a>
-            </p>
-          </section>
-        </form>
-      </section>
-    </main>
-  </div>
 
+  <header class="card text-center head-card align-middle">
+    <h1> Compartenos tus datos: </h1>
+  </header>
+
+  <main class="container text-center">
+    <div class="row middle">
+      <div class="col-2">
+        <button type="button" class="btn btn-default btn-circle btn-xl" id="return-button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="col-8">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" id="input-name" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="lastname" id="input-lastname" placeholder="Ingresa tu apellido">
+              </div>
+        </form>
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-default btn-circle btn-xl disabled" id="return-button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
   <script src="../js/firebase.js"></script>
+  <script src="../js/data.js"></script>
   <script src="../js/register.js"></script>
 </body>
 
