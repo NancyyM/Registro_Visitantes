@@ -30,7 +30,9 @@ margin-bottom: auto;
 #return-button,
 #next-button,
 #return-button-splash,
-#next-button-splash {
+#next-button-splash, 
+#next-button-player,
+#return-button-player {
   background: #007bff;
   color:#ffffff;
 }
