@@ -1,12 +1,3 @@
-// Function to get data from localstorage
-const getDataVisitor = () => {
-  let visitorName = localStorage.getItem('visitorName');
-  let visitorLastName = localStorage.getItem('visitorLastName');
-  let visitorFullName = `${visitorName} ${visitorLastName}`;
-  console.log(visitorFullName);
-  return visitorFullName;
-};
-
 // Get body from splash
 const body = document.getElementById('splash');
 
@@ -39,7 +30,7 @@ returnButtonSplash.addEventListener('click', () => {
 });
 
 
-window.onload = getDataVisitor();
+// window.onload = getDataVisitor();
 nextButtonSplash.addEventListener('click', () => {
   window.location.assign('../views/player.html');
-})
+});
