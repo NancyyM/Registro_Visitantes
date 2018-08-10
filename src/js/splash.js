@@ -30,7 +30,7 @@ returnButtonSplash.addEventListener('click', () => {
 });
 
 
-window.onload = getDataVisitor();
+// window.onload = getDataVisitor();
 nextButtonSplash.addEventListener('click', () => {
   window.location.assign('../views/player.html');
-})
+});

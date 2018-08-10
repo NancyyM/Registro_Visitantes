@@ -6,7 +6,7 @@ const getDataVisitor = () => {
   let visitorName = sessionStorage.getItem('visitorName');
   let visitorLastName = sessionStorage.getItem('visitorLastName');
   let visitorFullName = `${visitorName} ${visitorLastName}`;
-  console.log(visitorFullName);
+  // console.log(visitorFullName);
   return visitorFullName;
 };
 
@@ -64,6 +64,10 @@ const printSelects = (dataEmployees) => {
     }
   });
 };
+
+document.getElementById('return-button-host').addEventListener('click', () => {
+  window.location.assign('../views/player.html');
+});
 
 window.onload = () => {
   getDataVisitor();
