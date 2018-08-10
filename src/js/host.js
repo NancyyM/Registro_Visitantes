@@ -19,20 +19,16 @@ const getDataCompanies = () => {
   fetch(json)
     .then(response => response.json())
     .then((res) => {
-      // const companies = getCompaniesNames(res);
       const employees = getCompaniesEmployees(res);
-      // console.log(employees);
       printSelects(employees);
     });
 };
 
 const templateEmployees = (filteredEmployees) => {
-  console.log(filteredEmployees);
-  // document.getElementById('employees-list').innerHTML = '';
   let containerEmployees = document.getElementById('employees-list');
   let template = '';
   filteredEmployees.forEach((employee) => {
-    template += `<div class="item-employee">
+    template += `<div class="item-employee>
     <div class="offset-2 col-8">
         <div class="card horizontal">
                 <div class="card-stacked">
@@ -45,10 +41,8 @@ const templateEmployees = (filteredEmployees) => {
         </div>
  </div>`;
   });
-  console.log(template);
-  console.log(containerEmployees);
-
   containerEmployees.innerHTML = template;
+  getDataForHost();
 };
 
 const printSelects = (dataEmployees) => {
@@ -63,6 +57,26 @@ const printSelects = (dataEmployees) => {
       templateEmployees(filteredEmployees);
     }
   });
+};
+
+const getDataForHost = () => {
+  let elementos = document.getElementsByClassName('card-stacked');
+  for (let i = 0; i < elementos.length; i++) {
+    elementos[i].addEventListener('click', cardSelected);
+  };
+};
+
+const cardSelected = (event) => {
+  let selectedCard = event.currentTarget.parentNode;
+  let hostName = selectedCard.querySelector('h5').innerText;
+  let hostCompany = selectedCard.querySelector('p').innerText;
+  document.getElementById('input-host-name').value = hostName;
+
+  clearList();
+};
+
+const clearList = () => {
+  document.querySelector('section').innerHTML = '';
 };
 
 document.getElementById('return-button-host').addEventListener('click', () => {
