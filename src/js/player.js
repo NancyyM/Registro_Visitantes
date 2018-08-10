@@ -3,13 +3,13 @@ let snapshotCanvas = document.getElementById('snapshot');
 let captureButton = document.getElementById('capture');
 let videoTracks;
 
-let handleSuccess = function(stream) {
+let handleSuccess = (stream) => {
   // Attach the video stream to the video element and autoplay.
   player.srcObject = stream;
   videoTracks = stream.getVideoTracks();
 };
 
-captureButton.addEventListener('click', function() {
+captureButton.addEventListener('click', () => {
   let context = snapshot.getContext('2d');
   // Draw the video frame to the canvas.
   context.drawImage(player, 0, 0, snapshotCanvas.width,
@@ -35,3 +35,13 @@ captureButton.addEventListener('click', function() {
 navigator.mediaDevices.getUserMedia({ video: true })
   .then(handleSuccess);
 
+let next = document.getElementById('next-button-player');
+let returnButton = document.getElementById('return-button-player');
+
+next.addEventListener('click', () => {
+  window.location.assign('../views/host.html');
+});
+
+returnButton.addEventListener('click', () => {
+  window.location.assign('../views/splash.html');
+});

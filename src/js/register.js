@@ -27,7 +27,13 @@ returnButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  window.location.assign('../views/splash.html');
+  if (nextButton.classList.contains('disabled')) {
+    alert('Llena correctamente todos los campos');
+  } else {
+    inputName.innerHTML = '';
+    inputLastName.innerHTML = '';
+    window.location.assign('../views/splash.html');
+  }
 });
 
 // Listen to visitor last name
@@ -41,17 +47,15 @@ inputLastName.addEventListener('keyup', () => {
   };
 });
 
-
-const splashPhoto = (visitorData) => {
-  nextButton.addEventListener('click', () => {
-    console.log(visitorData);
-  });
-};
-
 const uploadVisitorName = (visitorName) => {
-  localStorage.setItem('visitorName', visitorName);
+  sessionStorage.setItem('visitorName', visitorName);
 };
 
 const uploadVisitorLastName = (visitorLatName) => {
-  localStorage.setItem('visitorLastName', visitorLastName);
+  sessionStorage.setItem('visitorLastName', visitorLastName);
+};
+
+window.onload = () => {
+  inputName.value = '';
+  inputLastName.value = '';
 };
