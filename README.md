@@ -1,56 +1,75 @@
-# PREÁMBULO
+## PREÁMBULO
 El proceso de registro de visitas en algunas de las empresas en América Latína es un proceso tedioso y manual, tomando en cuenta todo el avance tecnológico que se ha logrado en estos últimos años. Las personas cada vez viven con mas prisa y no quieren perder minutos valiosos de su tiempo en largas filas o formularios engorrosos.
 
-# OBJETIVOS
-Aprender de los usuarios, de sus insigths, de los diferentes prototipos creados y del feedback recibido. Para poder diseñar una plataforma facil de utilizar, funcional, _______________
+## OBJETIVOS
+Aprender de los usuarios, de sus insigths, de los diferentes prototipos creados y del feedback recibido. Para poder diseñar una plataforma limpia, facil de utilizar, funcional, y que cumpla con los requisitos solicitados por el cliente, satisfaciendo las necesidades del usuario a partir de una experiencia placentera.
 
 
-# DESCUBRIMIENTO E INVESTIGACIÓN
-
-## INVESTIGANDO Y ENTENDIENDO AL USUARIO.
+## DESCUBRIMIENTO E INVESTIGACIÓN
+INVESTIGANDO Y ENTENDIENDO AL USUARIO.
 
   ## Identificando el problema.
-El cliente nos solicita reinventar su sistema para el registro de las visitas que asisten al coworking. Independientemente del motivo de su visita, la persona encargada en recepción debe poder agilizar el proceso de registro, solicitando al visitante que ingrese algunos datos personales antes de poder otorgarle acceso.  
+El cliente nos solicita reinventar su sistema para el registro de las visitas que asisten al coworking. Independientemente del motivo de su visita, la persona encargada en recepción debe poder agilizar el proceso de registro, solicitando al visitante que ingrese algunos datos personales antes de poder otorgarle, o no, el acceso.
 
   ## Identificando las necesidades del usuario.
 Identificamos tres potenciales usuarios.
 
-  ### 1. La persona encargada en recepción (Administrador).
-  Esta persona debe poder indicarle al visitante que se registre en un sistema automatizado (tableta), donde es necesario que el visitante ingrese algunos datos personales, la persona encargada de recepción, y en general toda el área de administración debe poder visualizar en la base de datos del coworking los datos que los diferentes usuarios han ingresado en su registro, como son:
+  ### 1. La persona encargada en recepción (Recepcionista/Administrador).
+  Esta persona debe poder indicarle al visitante que se registre en un sistema automatizado, donde es necesario que el visitante ingrese algunos datos personales, la persona encargada de recepción, y en general toda el área de administración debe poder visualizar en la base de datos del coworking los datos que los diferentes usuarios han ingresado en su registro, generalmente son:
   - Nombre
   - Apellido
-  - Fotografia
   - Persona a quien visita
   - Motivo de su visita
   - Hora de entrada
+  - Hora de salida
+  - Firma
+  - En algunos casos se le solicita al visitante mostrar una identificación, en algunos otros casos se le solicita que deje su identificación en la recepción.
+
+  Tipos de Usuarios:
+  - Recepcionistas
+  - Administradores
+  - Personal de seguridad
 
   ### 2. La persona que acude de visita al coworking (Visitante).
-  Esta persona debe poder registrarse de manera fácil y rápida, sin complicaciones y de forma intuitiva, donde no tenga que depender de una segunda persona durante el proceso de su registro. Al ingresar a la plataforma debe poder ingresar los siguientes datos:
+  Esta persona debe poder registrarse de manera fácil y rápida, sin complicaciones y de forma intuitiva, donde no dependa de una segunda persona durante el proceso de su registro. Al ingresar a la plataforma debe poder ingresar los siguientes datos:
   - Nombre
   - Apellido
   - Tomarse una Fotografia 
   - Persona a quien solicita
   - Motivo de su visita
+
+  Tipos de Usuarios:
+  - Postulantes a puestos de empleo: Acuden a entrevistas de trabajo.
+  - Visitantes: Acuden a solicitar informes, a reunirse con algun amigo y/o familiar.
+  - Mensajeros: Acuden a dejar paquetería.
+  - Posibles Contratantes: Acuden a pedir información con el objetivo de contratar un espacio de trabajo para su empresa.
+
   
-  ### 3. La persona a la que visitan/solicitan (Visitado).
+  ### 3. La persona a la que visitan/solicitan (Visitado/Inquilino).
   Esta persona debe poder recibir una notificación indicandole que tiene una visita en el area de recepción, mostrandole los siguientes datos:
   - Nombre del visitante
   - Hora de llegada del visitante
   - Fotografía del visitante.
+
+  Tipos de Usuarios:
+  - Empleadores: Jefes y/o gerentes de las distints empresas que operan en el coworking
+  - Empleados: Todo el personal que labora para las distintas empresas que operan en el coworking.
+  - Socios: Personas que invierten en los distintos negocios dentro del coworking.
 
   ## Identificando las necesidades del cliente.
 Identificamos como cliente al coworking que nos esta contratando para resolverle un problema en concreto que es reinventar su proceso de registro de visitas.
 El cliente necesita solucionar dos problemas principales:
 
   ### 1. Facilitar el registro a los visitantes del coworking.
-  El cliente espera que el usuario se registre, ingresando sus datos mediante la plataforma de registro de visitantes, y una vez que ha concluido el registro, la persona encargada de recepción le otorgará acceso al coworking.
+  El cliente espera que el usuario se registre, ingresando sus datos mediante la plataforma de registro de visitantes, y una vez que ha concluido el registro, la persona encargada de recepción le otorgará, o no, acceso al coworking.
 
   ### 2. Facilitar la obtención y el guardado de la información de cada visitante que ingresa al coworking, para el área de administración.
-  La administración del coworking debe tener una base de datos donde se aloja la información de los clientes, de al menos 6 meses atrás, facilitando asi las consultas de la información en el sistema informático, y conservando así los respaldos de la información. 
+  La administración del coworking debe tener una base de datos donde se aloja la información de los clientes, de al menos 6 meses atrás, facilitando asi las consultas de la información en el sistema informático, y conservando los respaldos de la información. 
 
   ### 3. Con esta plataforma se le agrega un plus a las necesidades del cliente, que son:
 
   - Ahorro en papelería, al no tener que comprar mas papeletas para los registros, bolígrafos, tabletas ni clips o grapas.
+  
   Que todo esto se traduce a un gran ahorro económico a mediano y largo plazo.
 
   - Cuidado al medio ambiente, al no tener que malgastar hojas y hojas de papel (incluso aunque despues reciclan el lado opuesto de las hojas utilizadas), bolígrafos que contaminan y se suman a la gran cantidad de basura que ya generamos.
@@ -58,11 +77,17 @@ El cliente necesita solucionar dos problemas principales:
   - No mas generar basura, ya que al contar con un sistema digital, toda la información se aloja en una base de datos, avitando asi conservar archivos que despues de un tiempo se vuelven innecesarios, ocupan espacio que podría utilizarse con un mejor fin, y evitamos que se genere cada vez mas desecho.
 
   - Ahorro en personal, logrando incluso que en el caso de haber 2 personas en el área de recepción, se disminuya a una sola persona, ya que el trabajo que realizaría la segunda persona podría ser reemplazado por la plataforma de registro.
+
   Que esto se traduce a modelos de negocio, ahorro económico en cuestiones del personal laboral, y un ahorro económico a mediano y largo plazo.
 
   - Eficiencia laboral, justamente el rol de trabajo que desempeña el personal de recepción es: aparte de otras funciones el de indicar a las visitas el registrar sus datos, anotar horas de entrada y horas de salida.
+
   Traduciendo esto al tema del trabajo ágil y productivo, la persona encargada de recepción podría concentrarse mas en otras funciones laborales donde sea necesario invertir mas tiempo, dedicarse a asuntos mas importantes, o realizar una tarea extra, ya que en cuanto al tema del registro de visitas, simplemente se dedicaría a indicar a los usuarios que pasen a registrarse en la plataforma y ellos solos realizarían todo el proceso.
 
+MAYOR ATENCION A LAS VSITAS (ATENCION DE CALIDAD)
+ A LOS DE RECEPCION SE LES OLVIDA AVISAR O A LA PERSONA AVISADA SE LE OLVIDA QUE LE AVISARON
+  RIESGO DE PERDER EL HISTORIAL
+  PERDIDAS DE INFORMACION
 
 ## INVESTIGANDO Y ANALIZANDO A LA COMPETENCIA
 
@@ -100,7 +125,13 @@ Cabe resaltar que me mantuve aproximadamente 40 minutos observando a las visitas
 Antes de ir habíamos pedido a la coach Paulina, que de favor nos sacara una cita con la persona responsable de recepción, al llegar llamamos al interfón y nos otorgó acceso cuando le dijimos que íbamos a la cita. Subimos al 4° piso donde se encontraba Karla en la puerta esperándonos. 
 Observé lo siguiente:
 
-  - Contába con un bolígrafo y papeletas para el registro, sin embargo ni Karla ni su compañera nos solicit registrarnos
+  - Contába con un bolígrafo y papeletas para el registro, sin embargo ni Karla ni su compañera nos solicitaron registrarnos en la papeleta.
+  - Nos dieron acceso incluso antes de mencionarles nuestros nombres.
+  - Tampoco nos solicitaron que registráramos nuestra hora de salida.
+  - Mientras estuvimos en el lugar, nadie mas llegó.
+
+  Karla prosiguió a otorgranos la entrevista (aquí audio)
+
 
 
   ## Aprendiendo de nuestra competencia
