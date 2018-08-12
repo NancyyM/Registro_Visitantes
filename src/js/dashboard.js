@@ -22,3 +22,4 @@ exit.addEventListener('click', (event) => {
     window.location.reload();
   };
 });
+
