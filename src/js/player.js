@@ -1,27 +1,47 @@
-let player = document.getElementById('player'); 
-  let snapshotCanvas = document.getElementById('snapshot');
-  let captureButton = document.getElementById('capture');
-  let videoTracks;
+let player = document.getElementById('player');
+let snapshotCanvas = document.getElementById('snapshot');
+let captureButton = document.getElementById('capture');
+let videoTracks;
 
-  let handleSuccess = function(stream) {
-    // Attach the video stream to the video element and autoplay.
-    player.srcObject = stream;
-    videoTracks = stream.getVideoTracks();
-  };
+let handleSuccess = (stream) => {
+  // Attach the video stream to the video element and autoplay.
+  player.srcObject = stream;
+  videoTracks = stream.getVideoTracks();
+};
 
-  captureButton.addEventListener('click', function() {
-    let context = snapshot.getContext('2d');
-    // Draw the video frame to the canvas.
-    context.drawImage(player, 0, 0, snapshotCanvas.width, 
-        snapshotCanvas.height);
+captureButton.addEventListener('click', () => {
+  let context = snapshot.getContext('2d');
+  // Draw the video frame to the canvas.
+  context.drawImage(player, 0, 0, snapshotCanvas.width,
+    snapshotCanvas.height);
 
-        // Stop all video streams.
-    videoTracks.forEach(function(track) {track.stop()});
+  let imageDataURL = snapshotCanvas.toDataURL();
+
+  // Create a root reference
+  let storageRef = firebase.storage().ref();
+  let images = storageRef.child('Images');
+
+  images.putString(imageDataURL, 'data_url').then(function(snapshot) {
+    console.log('Uploaded a data_url string!');
   });
 
-  navigator.mediaDevices.getUserMedia({video: true})
-      .then(handleSuccess);
+  // Stop all video streams.
+  videoTracks.forEach(function(track) {
+    track.stop();
+  });
+});
 
-  let imageDataURL = hidden_canvas.toDataURL('image/png');
-      // Set the dataURL as source of an image element, showing the captured photo.
-      image.setAttribute('src', imageDataURL); 
+// Detiene la camara cuando se toma la foto
+navigator.mediaDevices.getUserMedia({ video: true })
+  .then(handleSuccess);
+
+let next = document.getElementById('next-button-player');
+let returnButton = document.getElementById('return-button-player');
+
+next.addEventListener('click', () => {
+  window.location.assign('../views/host.html');
+});
+
+returnButton.addEventListener('click', () => {
+  window.location.assign('../views/splash.html');
+});

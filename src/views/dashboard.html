@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Co-Working | Bienvenid@</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <section class="container text-center" id="initial-view">
+    <div id="logIn">
+      <h1>Bienvenid@</h1>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+            <input type="text" id="user-admin" class="form-control" placeholder="Ingresa tu usuario">
+        </div>
+        <div class="form-group">
+            <input type="password" id="admin-password" class="form-control" placeholder="Ingresa la contraseña">
+        </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary btn-lg" id="init-button">Ingresar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div id="table" class="table-responsive" style="display:none">
+      <div class="card text-center head-card align-middle">
+        <h1>Registro de visitas</h1>
+      </div>
+      <table class="table">
+        <thead class="thead-ligth">
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">A quien visita</th>
+            <th scope="col">Compañia</th>
+            <th scope="col">Hora de ingreso</th>
+            <th scope="col">Hora de salida</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>Citlalli</td>
+            <td>Laboratoria</td>
+            <td>8:00 pm</td>
+            <td> </td>
+            <td>11//08/2018</td>
+            <td>Ingresó</td>
+          </tr>
+          <tr>
+            <td>Nancy</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <div class="close" id="close" style="display:none">
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-primary btn-lg" id="logOut" name="logOut">Cerrar sesión</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
