@@ -14,7 +14,7 @@ margin-bottom: auto;
 
 .head-card {
   background:#f8f9fa;
-  height: 10vh;
+  height: 12vh;
   padding: 10px;
 }
 
@@ -38,7 +38,8 @@ margin-bottom: auto;
 #next-button-player,
 #return-button-player,
 #return-button-host,
-#next-button-host {
+#next-button-host,
+.log-out {
   background: #007bff;
   color:#ffffff;
 }
@@ -50,4 +51,24 @@ margin-bottom: auto;
 .item-employee {
   margin: 0 auto;
 }
+.progreso1{
+  transition-delay: 4s;
+  transition: all 0.45s ease-in-out;
+  width: 34.333333%;
+  animation: 0.5s;
+  background-color: #007bff;
+  max-width:768px
+}
 
+.block1{
+  color: #ffffff;
+}
+#b1{
+  color: #007bff;
+}
+.table{
+  margin-top: 5%;
+}
+.thead-ligth{
+  background:#f8f9fa,
+}
