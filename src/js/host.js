@@ -104,12 +104,12 @@ document.getElementById('next-button-host').addEventListener('click', () => {
     'Gracias',
     `${visitorObject.host.hostName} ha sido notificado de tu llegada.
     Por favor espera en el área de recepción`,
-    'success');
-  // ).then((result) => {
-  //   if (result.value) {
-  //     window.location.assign('../index.html');
-  //   }
-  // });
+    'success'
+  ).then((result) => {
+    if (result.value) {
+      window.location.assign('../index.html');
+    }
+  });
 });
 
 const sendVisitorInfoToFirebase = (visitorObject) => {
