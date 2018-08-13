@@ -51,6 +51,11 @@ margin-bottom: auto;
 .item-employee {
   margin: 0 auto;
 }
+
+.hide{
+  display: none;
+}
+
 .progreso1{
   transition-delay: 4s;
   transition: all 0.45s ease-in-out;
