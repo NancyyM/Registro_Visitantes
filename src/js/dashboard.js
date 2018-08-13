@@ -10,9 +10,10 @@ btnLogin.addEventListener('click', event => {
   if (admin === 'user' && password === 1234) {
     logIn.style.display = 'none';
     table.style.display = 'block';
+    close.classList.remove('hide');
     close.style.display = 'block';
     console.log('si pasa');
-    } else {
+  } else {
     alert('Datos incorrectos');
   }
 });

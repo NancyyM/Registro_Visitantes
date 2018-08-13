@@ -1,3 +1,6 @@
+// Get a reference to the storage service, which is used to create references in your storage bucket
+let storage = firebase.storage();
+
 let player = document.getElementById('player');
 let snapshotCanvas = document.getElementById('snapshot');
 let captureButton = document.getElementById('capture');
@@ -16,19 +19,27 @@ captureButton.addEventListener('click', () => {
     snapshotCanvas.height);
 
   let imageDataURL = snapshotCanvas.toDataURL();
+  console.log(imageDataURL);
 
   // Create a root reference
-  let storageRef = firebase.storage().ref();
-  let images = storageRef.child('Images');
+  let storageRef = storage.ref('/visitorPhotos/');
+  console.log(storageRef);
+  const newVisitorKey = firebase.database().ref().child('visitors').push().key;
 
-  images.putString(imageDataURL, 'data_url').then(function(snapshot) {
+  let images = storageRef.child(newVisitorKey);
+  sessionStorage.setItem('visitorKey', newVisitorKey);
+
+
+  images.putString(imageDataURL, 'data_url').then((snapshot) => {
     console.log('Uploaded a data_url string!');
   });
 
   // Stop all video streams.
-  videoTracks.forEach(function(track) {
+  videoTracks.forEach((track) => {
     track.stop();
   });
+
+  document.getElementById('next-button-player').classList.remove('hide');
 });
 
 // Detiene la camara cuando se toma la foto

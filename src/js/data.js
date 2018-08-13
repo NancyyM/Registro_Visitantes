@@ -11,7 +11,7 @@ window.getCompaniesEmployees = (dataCompanies) => {
 
   for (const companie in dataCompanies) {
     let employeeCompanie = companie;
-    console.log(employeeCompanie);
+    // console.log(employeeCompanie);
     const employeesNames = Object.values(dataCompanies[companie].empleados);
     employeesNames.forEach(employee => {
       let employeeName = employee.nombre;
