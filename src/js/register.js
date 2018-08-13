@@ -13,7 +13,7 @@ const visitorData = {};
 inputName.addEventListener('keyup', () => {
   visitorName = inputName.value.trim().toUpperCase();
   inputName.value = visitorName;
-  if (visitorName != '') {
+  if (visitorName !== '') {
     inputLastName.removeAttribute('disabled');
     visitorData.name = visitorName;
     // let nameAndLastName = listenInputLastName(visitorData);
@@ -27,8 +27,10 @@ returnButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  if (nextButton.classList.contains('disabled')) {
-    alert('Llena correctamente todos los campos');
+  if (inputName.value.trim() === '' || inputName.value.trim().length < 3 || inputLastName.value.trim() === '' || inputLastName.value.trim().length < 3) {
+    swal({
+      text: 'Llena correctamente todos los campos'
+    });
   } else {
     inputName.innerHTML = '';
     inputLastName.innerHTML = '';
@@ -40,9 +42,9 @@ nextButton.addEventListener('click', () => {
 inputLastName.addEventListener('keyup', () => {
   visitorLastName = inputLastName.value.toUpperCase().trim();
   inputLastName.value = inputLastName.value.toUpperCase();
-  if (visitorLastName != '') {
+  if (visitorLastName !== '') {
     visitorData.lastname = visitorLastName;
-    nextButton.classList.remove('disabled');
+    nextButton.classList.remove('hide');
     uploadVisitorLastName(visitorLastName);
   };
 });
