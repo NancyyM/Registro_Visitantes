@@ -12,14 +12,16 @@ let handleSuccess = (stream) => {
   videoTracks = stream.getVideoTracks();
 };
 
-captureButton.addEventListener('click', () => {
+const takePhoto = () => {
   let context = snapshot.getContext('2d');
   // Draw the video frame to the canvas.
   context.drawImage(player, 0, 0, snapshotCanvas.width,
     snapshotCanvas.height);
 
   let imageDataURL = snapshotCanvas.toDataURL();
-  console.log(imageDataURL);
+  snapshotCanvas.classList.remove('hide');
+  player.classList.add('hide');
+  document.getElementById('next-button-player').classList.remove('hide');
 
   // Create a root reference
   let storageRef = storage.ref('/visitorPhotos/');
@@ -28,7 +30,6 @@ captureButton.addEventListener('click', () => {
 
   let images = storageRef.child(newVisitorKey);
   sessionStorage.setItem('visitorKey', newVisitorKey);
-
 
   images.putString(imageDataURL, 'data_url').then((snapshot) => {
     console.log('Uploaded a data_url string!');
@@ -39,7 +40,17 @@ captureButton.addEventListener('click', () => {
     track.stop();
   });
 
-  document.getElementById('next-button-player').classList.remove('hide');
+  captureButton.classList.remove('take-photo');
+  captureButton.innerHTML = 'Volver a tomarla';
+  captureButton.classList.add('retake-photo');
+};
+
+captureButton.addEventListener('click', () => {
+  if (captureButton.classList.contains('take-photo')) {
+    takePhoto();
+  } else if (captureButton.classList.contains('retake-photo')) {
+    location.reload();
+  }
 });
 
 // Detiene la camara cuando se toma la foto
