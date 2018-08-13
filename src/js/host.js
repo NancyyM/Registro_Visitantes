@@ -81,7 +81,7 @@ const cardSelected = (event) => {
 };
 
 const activateButton = (hostName) => {
-  if (hostName != '') {
+  if (hostName !== '') {
     document.getElementById('next-button-host').classList.remove('hide');
   } else {
     document.getElementById('next-button-host').classList.add('hide');
@@ -118,7 +118,6 @@ document.getElementById('next-button-host').addEventListener('click', () => {
       text: 'Por favor ingresa a quien visitas'
     });
   };
-
 });
 
 const sendVisitorInfoToFirebase = (visitorObject) => {

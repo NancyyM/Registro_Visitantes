@@ -13,7 +13,7 @@ const visitorData = {};
 inputName.addEventListener('keyup', () => {
   visitorName = inputName.value.trim().toUpperCase();
   inputName.value = visitorName;
-  if (visitorName != '') {
+  if (visitorName !== '') {
     inputLastName.removeAttribute('disabled');
     visitorData.name = visitorName;
     // let nameAndLastName = listenInputLastName(visitorData);
@@ -42,7 +42,7 @@ nextButton.addEventListener('click', () => {
 inputLastName.addEventListener('keyup', () => {
   visitorLastName = inputLastName.value.toUpperCase().trim();
   inputLastName.value = inputLastName.value.toUpperCase();
-  if (visitorLastName != '') {
+  if (visitorLastName !== '') {
     visitorData.lastname = visitorLastName;
     nextButton.classList.remove('hide');
     uploadVisitorLastName(visitorLastName);
