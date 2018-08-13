@@ -135,7 +135,7 @@ Antes de acudir al citado coworking, se pidió a la coach Paulina facilitarnos u
 
 Durante la entrevista (audio aqui) Karla nos explicó en que consistía su sistema de registro de visitas.
 
-![wework](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/wework.png?raw=true)
+![3espacio](https://github.com/NancyyM/3espacio/blob/master/UX_images/registro_3espacio.png?raw=true)
 
 Comentó que se trata de papeletas y bolígrafo, de donde obtiene los siguientes datos de los usuarios que visitan el lugar:
 
