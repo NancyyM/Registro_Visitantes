@@ -33,6 +33,10 @@ body {
   margin-top: 25%;
 }
 
+.middle-1 {
+  margin: auto;
+}
+
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -53,6 +57,21 @@ body {
 .log-out {
   background: #007bff;
   color:#ffffff;
+}
+
+#player {
+  width: 80%;
+}
+
+.center {
+  position: relative;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .vertical-center {

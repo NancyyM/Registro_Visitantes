@@ -104,7 +104,7 @@ document.getElementById('next-button-host').addEventListener('click', () => {
     document.getElementById('host-body').innerHTML = '';
     swal(
       'Gracias',
-      `${visitorObject.host.hostName} ha sido notificado de tu llegada.
+      `${visitorObject.host.hostName} ha sido notificad@ de tu llegada.
       Por favor espera en el área de recepción`,
       'success'
     ).then((result) => {
