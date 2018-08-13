@@ -112,26 +112,27 @@ const sendVisitorInfoToFirebase = (visitorObject) => {
   console.log(visitorObject);
   // Set the data for each visitor registered
   firebase.database().ref(`visitors/${newVisitorKey}`).set(visitorObject);
-  sendEmail();
+  // sendEmail();
 };
 
-const sendEmail = () => {
-  const sgMail = require(['@sendgrid/mail']);
-  sgMail.setApiKey(process.env.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);
-  const msg = {
-    to: 'citlallidmg@gmail.com',
-    from: 'test@example.com',
-    subject: 'Sending with SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-  };
-  sgMail.send(msg);
-};
+// const sendEmail = () => {
+//   const sgMail = require(['@sendgrid/mail']);
+//   sgMail.setApiKey(process.env.sengrid.env);
+//   const msg = {
+//     to: 'citlallidmg@gmail.com',
+//     from: 'test@example.com',
+//     subject: 'Sending with SendGrid is Fun',
+//     text: 'and easy to do anywhere, even with Node.js',
+//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+//   };
+//   sgMail.send(msg);
+// };
 
 const createVisitorObject = () => {
   let visitorInfo = {
     'visitor': getDataVisitor(),
-    'host': getDataHost()
+    'host': getDataHost(),
+    'status:': 'pendiente'
   };
   return visitorInfo;
 };

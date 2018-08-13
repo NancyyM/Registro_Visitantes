@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
-    "eslint": "eslint --ext .js src/ test/",
+    "htmlhint": "htmlhint src/*.html   src/views/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ src/js/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
     "build": "babel src -d lib",
     "test": "jest --coverage"

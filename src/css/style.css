@@ -75,5 +75,10 @@ margin-bottom: auto;
   margin-top: 5%;
 }
 .thead-ligth{
-  background:#f8f9fa,
+  background:#f8f9fa
+}
+
+#snapshot{
+  width:640px;
+  height: 480px;
 }

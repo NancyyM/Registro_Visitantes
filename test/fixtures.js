@@ -1,0 +1,12 @@
+window.fixtures = {'Rodhe Asociados': {'empleados': [{'nombre': 'Juanito Peréz',
+  'correo': 'juanitop@yopmail.com'}, {'nombre': 'Ana Mora',
+  'correo': 'anam@yopmail.com'}, {'nombre': 'Leticia Juárez',
+  'correo': 'leticiaj@yopmail.com'}]},
+'Laboratoria': {'empleados': [{'nombre': 'Lilia Goméz',
+  'correo': 'liliag@yopmail.com'}, {'nombre': 'Berenice Martinéz',
+  'correo': 'berenicem@yopmail.com'}, {'nombre': 'Gloria Guerrero',
+  'correo': 'gloriag@yopmail.com'}]},
+'Promociones y convenciones': {'empleados': [{'nombre': 'Rosalía Hernández',
+  'correo': 'rosaliah@yopmail.com'}, {'nombre': 'José López',
+  'correo': 'josel@yopmail.com'}, {'nombre': 'Pedro Jurado',
+  'correo': 'pedroj@yopmail.com'}]}};
