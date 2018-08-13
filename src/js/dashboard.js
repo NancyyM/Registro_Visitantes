@@ -47,10 +47,23 @@ const getTimeToDate = (time) => {
   return timeToDate;
 };
 
+const getTimeToHour = (time) => {
+  let currentTime = new Date(time);
+  let hours = currentTime.getHours();
+  let minutes = currentTime.getMinutes();
+
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  };
+  let timeToHour = `${hours} : ${minutes}`;
+  return timeToHour;
+};
+
 const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) => {
   let visitorsTable = document.getElementById('visitors-table');
   const time = date;
   let timeToDate = getTimeToDate(time);
+  let timeToHour = getTimeToHour(time);
 
   let row = visitorsTable.insertRow(1);
   let cellVisitorPhoto = row.insertCell(0);
@@ -65,7 +78,7 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) =
   cellVisitorName.innerHTML = `${visitor}`;
   cellHostName.innerHTML = `${hostName}`;
   cellHostCompany.innerHTML = `${hostCompany}`;
-  cellIn.innerHTML = '-';
+  cellIn.innerHTML = `${timeToHour}`;
   cellOut.innerHTML = '-';
   cellDate.innerHTML = `${timeToDate}`;
   cellStatus.innerHTML = `${status}`;
