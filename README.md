@@ -253,7 +253,7 @@ En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con 
 ![bajaFidelidad](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/prototipoBajaFidelidad.jpg?raw=true)
 
   ## Alta Fidelidad
-https://marvelapp.com/e759949/screen/46634082
+ver aquí: https://marvelapp.com/e759949/screen/46630471
 
 En esta etapa puedes prototipar de distintas maneras:
 
