@@ -6,6 +6,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#initial-view h1{
+  font-size: 2em;
+}
+
+hr {
+  width: 50%;
+}
 .centered-view {
   position: absolute;
   top: 50%;
@@ -21,11 +28,11 @@ body {
 #logo-coworking {
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 50%;
 }
 
 .head-card {
   background:#f8f9fa;
-  /* height: 12vh; */
   padding: 10px;
 }
 
