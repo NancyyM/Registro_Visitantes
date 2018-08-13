@@ -71,15 +71,13 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) =
   let cellHostName = row.insertCell(2);
   let cellHostCompany = row.insertCell(3);
   let cellIn = row.insertCell(4);
-  let cellOut = row.insertCell(5);
-  let cellDate = row.insertCell(6);
-  let cellStatus = row.insertCell(7);
+  let cellDate = row.insertCell(5);
+  let cellStatus = row.insertCell(6);
 
   cellVisitorName.innerHTML = `${visitor}`;
   cellHostName.innerHTML = `${hostName}`;
   cellHostCompany.innerHTML = `${hostCompany}`;
   cellIn.innerHTML = `${timeToHour}`;
-  cellOut.innerHTML = '-';
   cellDate.innerHTML = `${timeToDate}`;
   cellStatus.innerHTML = `${status}`;
 };

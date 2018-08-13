@@ -2,6 +2,10 @@ html {
   height: 100vh;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .initial-view {
 margin-top: 10%;
 margin-bottom: auto;
@@ -72,10 +76,9 @@ margin-bottom: auto;
   color: #007bff;
 }
 .table{
-  margin-top: 5%;
-}
-.thead-ligth{
-  background:#f8f9fa
+  margin: 5% auto;
+  border: 1px solid black;
+  width: 80%;
 }
 
 #snapshot{
