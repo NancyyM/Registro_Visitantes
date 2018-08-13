@@ -1,221 +1,185 @@
-Trabajar aqui, el readme esta mas abajo para que lo podamos leer
+## PREÁMBULO
+El proceso de registro de visitas en algunas de las empresas en América Latína es un proceso tedioso y manual, tomando en cuenta todo el avance tecnológico que se ha logrado en estos últimos años. Las personas cada vez viven con mas prisa y no quieren perder minutos valiosos de su tiempo en largas filas o formularios engorrosos.
+
+## OBJETIVOS
+Aprender de los usuarios, de sus insigths, de los diferentes prototipos creados y del feedback recibido. Para poder diseñar una plataforma limpia, facil de utilizar, funcional, y que cumpla con los requisitos solicitados por el cliente, satisfaciendo las necesidades del usuario a partir de una experiencia placentera.
+
+
+## DESCUBRIMIENTO E INVESTIGACIÓN
+INVESTIGANDO Y ENTENDIENDO AL USUARIO.
+
+  ## Identificando el problema.
+El cliente nos solicita reinventar su sistema para el registro de las visitas que asisten al coworking. Independientemente del motivo de su visita, la persona encargada en recepción debe poder agilizar el proceso de registro, solicitando al visitante que ingrese algunos datos personales antes de poder otorgarle, o no, el acceso.
+
+  ## Identificando las necesidades del usuario.
+Identificamos tres potenciales usuarios.
+
+  ### 1. La persona encargada en recepción (Recepcionista/Administrador).
+  Esta persona debe poder indicarle al visitante que se registre en un sistema automatizado, donde es necesario que el visitante ingrese algunos datos personales, la persona encargada de recepción, y en general toda el área de administración debe poder visualizar en la base de datos del coworking los datos que los diferentes usuarios han ingresado en su registro, generalmente son:
+  - Nombre
+  - Apellido
+  - Persona a quien visita
+  - Motivo de su visita
+  - Hora de entrada
+  - Hora de salida
+  - Firma
+  - En algunos casos se le solicita al visitante mostrar una identificación, en algunos otros casos se le solicita que deje su identificación en la recepción.
+
+  Tipos de Usuarios:
+  - Recepcionistas
+  - Administradores
+  - Personal de seguridad
+
+  ### 2. La persona que acude de visita al coworking (Visitante).
+  Esta persona debe poder registrarse de manera fácil y rápida, sin complicaciones y de forma intuitiva, donde no dependa de una segunda persona durante el proceso de su registro. Al ingresar a la plataforma debe poder ingresar los siguientes datos:
+  - Nombre
+  - Apellido
+  - Tomarse una Fotografia 
+  - Persona a quien solicita
+  - Motivo de su visita
+
+  Tipos de Usuarios:
+  - Postulantes a puestos de empleo: Acuden a entrevistas de trabajo.
+  - Visitantes: Acuden a solicitar informes, a reunirse con algun amigo y/o familiar.
+  - Mensajeros: Acuden a dejar paquetería.
+  - Posibles Contratantes: Acuden a pedir información con el objetivo de contratar un espacio de trabajo para su empresa.
+
+  
+  ### 3. La persona a la que visitan/solicitan (Visitado/Inquilino).
+  Esta persona debe poder recibir una notificación indicandole que tiene una visita en el area de recepción, mostrandole los siguientes datos:
+  - Nombre del visitante
+  - Hora de llegada del visitante
+  - Fotografía del visitante.
+
+  Tipos de Usuarios:
+  - Empleadores: Jefes y/o gerentes de las distints empresas que operan en el coworking
+  - Empleados: Todo el personal que labora para las distintas empresas que operan en el coworking.
+  - Socios: Personas que invierten en los distintos negocios dentro del coworking.
+
+  ## Identificando las necesidades del cliente.
+Identificamos como cliente al coworking que nos esta contratando para resolverle un problema en concreto que es reinventar su proceso de registro de visitas.
+El cliente necesita solucionar dos problemas principales:
+
+  ### 1. Facilitar el registro a los visitantes del coworking.
+  El cliente espera que el usuario se registre, ingresando sus datos mediante la plataforma de registro de visitantes, y una vez que ha concluido el registro, la persona encargada de recepción le otorgará, o no, acceso al coworking.
+
+  ### 2. Facilitar la obtención y el guardado de la información de cada visitante que ingresa al coworking, para el área de administración.
+  La administración del coworking debe tener una base de datos donde se aloja la información de los clientes, de al menos 6 meses atrás, facilitando asi las consultas de la información en el sistema informático, y conservando los respaldos de la información. 
+
+  ### 3. Con esta plataforma se le agrega un plus a las necesidades del cliente, que son:
+
+  - Ahorro en papelería, al no tener que comprar mas papeletas para los registros, bolígrafos, tabletas ni clips o grapas.
+  
+  Que todo esto se traduce a un gran ahorro económico a mediano y largo plazo.
+
+  - Cuidado al medio ambiente, al no tener que malgastar hojas y hojas de papel (incluso aunque despues reciclan el lado opuesto de las hojas utilizadas), bolígrafos que contaminan y se suman a la gran cantidad de basura que ya generamos.
+
+  - No mas generar basura, ya que al contar con un sistema digital, toda la información se aloja en una base de datos, avitando asi conservar archivos que despues de un tiempo se vuelven innecesarios, ocupan espacio que podría utilizarse con un mejor fin, y evitamos que se genere cada vez mas desecho.
+
+  - Ahorro en personal, logrando incluso que en el caso de haber 2 personas en el área de recepción, se disminuya a una sola persona, ya que el trabajo que realizaría la segunda persona podría ser reemplazado por la plataforma de registro.
+
+  Que esto se traduce a modelos de negocio, ahorro económico en cuestiones del personal laboral, y un ahorro económico a mediano y largo plazo.
+
+  - Eficiencia laboral, justamente el rol de trabajo que desempeña el personal de recepción es: aparte de otras funciones el de indicar a las visitas el registrar sus datos, anotar horas de entrada y horas de salida.
+
+  Traduciendo esto al tema del trabajo ágil y productivo, la persona encargada de recepción podría concentrarse mas en otras funciones laborales donde sea necesario invertir mas tiempo, dedicarse a asuntos mas importantes, o realizar una tarea extra, ya que en cuanto al tema del registro de visitas, simplemente se dedicaría a indicar a los usuarios que pasen a registrarse en la plataforma y ellos solos realizarían todo el proceso.
+
+MAYOR ATENCION A LAS VSITAS (ATENCION DE CALIDAD)
+ A LOS DE RECEPCION SE LES OLVIDA AVISAR O A LA PERSONA AVISADA SE LE OLVIDA QUE LE AVISARON
+  RIESGO DE PERDER EL HISTORIAL
+  PERDIDAS DE INFORMACION
+
+## INVESTIGANDO Y ANALIZANDO A LA COMPETENCIA
+
+  ## Identificando a nuestra competencia
+Se hizo una investigación a 3 coworkings en la Ciudad de México.
+
+  ### WeWork.
+Ingresando de cliente incógnito se pudo conocer el sistema que utilizan para manejar el registro de sus visitas. 
+Al ingresar, en la planta baja se encontraban dos vigilantes, que indicaban hacer el registro con bolígrafo en una papeleta, donde se solicitaban los siguientes datos:
+  - Nombre completo
+  - Empresa que se visita
+  - Asunto
+  - Piso
+  - Hora de entrada
+  - Hora de salida
+  - Firma
+Una vez que se llenaban todos los campos se otorgaba el acceso al edificio. El segundo vigilante era el que con su tarjeta de acceso nos permitía ingresar por los torniquetes.
+
+Especialmente en el piso 11 que fue al que acudí, se encontraban dos chicas recepcionistas, la primera indicación que me dieron fue que avanzara hacia la tableta para registrarme, la cual estaba aproximadamente 4 metros adelante de ellas y del escritorio. 
+
+Proseguí al proceso de registro donde se encontraba una tableta en forma horizontal y estos fueron los resultados de mi experiencia propia:
+Cabe resaltar que me mantuve aproximadamente 40 minutos observando a las visitas que llegaban.
+
+  - Las chicas realmente no tocaban en ningun momento la plataforma, simplemente indicaban que prosiguieramos a registrarnos, ahorrandose ellas muchos minutos de su tiempo. Nota: ellas indicaban realizar el registro solamente a las personas que justo preguntaban (por protocólo) dónde se registraban para ingresar.
+  - Las chicas estaban concentradas, una atendiendo una llamada y otra atendiendo a un cliente en la recepción.
+  - Las chicas no se dieron cuenta si realmente me registré o pasé de largo. 
+  - Estaban distraídas a los visitantes que iban llegando en ese momento.
+  - Observé que varios visitantes al nadie indicarles el protocolo de registro, pasaron de largo, algunos notaron la tableta, algunos no.
+  - Algunos dejaban el proceso de registro a medias, ya que se daban cuenta que nadie estaba observandolos y que "los demás se pasaban sin registrarse"
+  - Mientras estuve observando, TODOS los que llevaban mensajería o paquetería se registraron y terminaron el proceso.
+  - Realmente no podía conocer quien era trabajador y quien era visitante. Lo intuí porque los visitantes llegaban un poco inseguros y algunos preguntaban en recepción, seguido de esto, algunos seguían las indicaciones de registro y otros no, los empleados por ejemplo, pasaban de largo con apariencia de seguridad.
+  - Durante el tiempo que estuve observando se registraron aproximadamente 8 personas, entre ellos 4 mensajeros.
+
+  ### El Tercer Espacio
+Antes de ir habíamos pedido a la coach Paulina, que de favor nos sacara una cita con la persona responsable de recepción, al llegar llamamos al interfón y nos otorgó acceso cuando le dijimos que íbamos a la cita. Subimos al 4° piso donde se encontraba Karla en la puerta esperándonos. 
+Observé lo siguiente:
+
+  - Contába con un bolígrafo y papeletas para el registro, sin embargo ni Karla ni su compañera nos solicitaron registrarnos en la papeleta.
+  - Nos dieron acceso incluso antes de mencionarles nuestros nombres.
+  - Tampoco nos solicitaron que registráramos nuestra hora de salida.
+  - Mientras estuvimos en el lugar, nadie mas llegó.
+
+  Karla prosiguió a otorgranos la entrevista (aquí audio)
 
 
 
+  ## Aprendiendo de nuestra competencia
+
+  ### WeWork
+  
+  ## Aprendiendo de nuestros stakeholders
 
 
-# Registro de Visitantes
+# SINTESIS Y DEFINICION
+En esta fase usamos los datos coleccionados en la fase de investigación y descubrimiento buscando tendencias e insights valiosos para el desarrollo del producto, y entendemos los deseos y necesidades del público al que estará dirigido nuestro producto.
+Algunas de las herramientas que utilizarás durante esta etapa son:
 
-## Preámbulo
+-Diagramas de afinidad
+-User Personas
+-Customer journey maps
+-Storytelling
+-Problem statements
+-How Might We
+-What if
 
-El registro de visitantes en una empresa en América Latina es un proceso tedioso
-y manual. Lo común es que una persona esté en la recepción tomando nota - a
-veces con papel y lápiz - de cada visitante. Por razones de seguridad,
-usualmente piden a cada visitante dejar una identificación. Si vivimos en la era
-digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal
-si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de
-pedir una identificación, tomamos una foto? ...
 
-## Introducción
+# IDEACION
+En esta fase buscamos las mejores maneras para ejecutar/desarrollar las funcionalidades definidas en la fase de ideación. Se elaboran sketches y se decide qué propuesta se ejecutará.
 
-En este proyecto la empresa de coworking donde opera Laboratoria en tu ciudad ha
-decidido contratarte a ti y a dos compañeras para reinventar su proceso de
-registro de visitantes. Con la entrada de [WeWork](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwilrK_T5KjcAhWCj7MKHexzAEgYABAAGgJxbg&ohost=www.google.cl&cid=CAASE-RoAxXTp1Cd0ErxEHpPSGuF4Hk&sig=AOD64_38ykNPf0QRtI9n4CFtpQpth-MrNQ&q=&ved=0ahUKEwjswKvT5KjcAhVkU98KHUcYCeMQ0QwIJA&adurl=)
-al mercado latinoamericano, tienen mucha más competencia y necesitan invertir en
-tecnología para mejorar su servicio; el registro de visitantes es un primer
-acercamiento. Te dan la referencia de [Envoy](https://envoy.com/) en EEUU (un
-servicio que ofrece un sistema digital de registro de visitantes) y ustedes
-tienen que desarrollar una versión mínima viable (ver anexo I abajo).
+En esta etapa utilizaras herramientas como:
 
-## Objetivos de aprendizaje
+Brainstorming
+Crazy eights
+Museo de arte
+Benchmarking
 
-El objetivo principal de este proyecto es que pongas en práctica todo lo
-aprendido durante el common core, con foco en la calidad, trabajando en un
-equipo multifuncional y presentando tu solución a una audiencia.
+# PROTOTIPADO
+En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con usuarios para saber si estamos resolviendo sus problemas y satisfaciendo sus necesidades con nuestro producto.
 
-## Consideraciones generales
+En esta etapa puedes prototipar de distintas maneras:
 
-Para completar este proyecto deberás trabajar en un equipo de tres y seguir las
-siguientes consideraciones:
+Prototipado de contenido
+Prototipado de baja fidelidad
+Prototipado de alta fidelidad
+Con herramientas como:
 
-### 1. Planificación y organización
+Lápiz y papel
+Pop
+Marvel
+Invision
+Balsamiq
 
-#### Roles, squad multifuncional
 
-Cada integrante del equipo debe asumir alguno de los siguientes "roles" (\*),
-liderando las siguientes áreas de trabajo:
-
-1. Diseñadora UX
-   * Diseñar la experiencia de la aplicación (flujo, interacción, etc.).
-   * Identificar, documentar y priorizar las historias de usuario.
-   * Crear el diseño visual de la interfaz.
-2. Desarrolladoras Front-end
-   * Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
-   * Deben dividirse las funcionalidades entre las dos desarrolladoras.
-   * Todas los desarrollos deben incluir pruebas unitarias.
-
-(\*) Al no haber rol de Product Manager, las responsabilidades de gestión son
-compartidas entre todas las integrantes.
-
-Planificación inicial
-
-Es muy importante que al dividirse/distribuir/repartir el trabajo, lo hagan
-pensando de manera ágil y no en cascada. Es decir, si una de ustedes está
-esperando a que otra termine "su parte" para empezar a trabajar, algo anda mal,
-¡[eso se parece a la organización del trabajo industrial!](https://media.giphy.com/media/OQ872dEsRi8cU/source.gif).
-Todas son responsables del producto final y todas pueden (y deben) colaborar en
-el diseño, el desarrollo y la planificación.
-
-TIPS:
-
-* Recuerda a nuestras nuevas BFFs, [las historias de usuario](http://jmbeas.es/guias/historias-de-usuario/)
-* Ten siempre en mente evitar el desperdicio. Por ejemplo: ¿de qué sirve que
-  tengas el prototipo del 100% de un proyecto en Figma (alta definición) si
-  solamente implementas el 50% del proyecto? El otro 50% del prototipo se podría
-  considerar como desperdicio.
-* Limitar el trabajo en progreso. Si son 3 personas, procuren no tener más de 3
-  tareas a la vez en "doing".
-* ¿Estás segura de que quieren seguir invirtiendo más minutos de tu vida (que no
-  volverán) en discutir los colores del logotipo?
-  [Aquí hay algo que te puede ayudar a decidir](https://play.google.com/store/apps/details?id=com.flip.war_daddy.flip_coin).
-
-### 2. Detalles sobre la implementación
-
-* La lógica del proyecto debe estar implementada completamente en JavaScript
-  (ES6), HTML y CSS.
-* Está permitido usar librerías o frameworks tanto de CSS como de JS, pero no es
-  obligatorio. Elige bien las batallas que quieres luchar.
-* En este proyecto, no contamos con un boilerplate, por lo que deberás definir
-  la estructura de carpetas y archivos que consideres necesaria, puedes guiarte
-  de los proyectos anteriores.
-* Los tests y el setup necesario para ejecutarlos serán hechos enteramente por
-  ti.
-* Para armar las interfaces visuales utiliza como base alguna de estas guías de
-  componentes:
-  * [Guía Desktop 1](https://www.figma.com/file/F3aUqpHWOfZsEQifTPIleXo6/material-kit-free)
-  * [Guía Desktop 2](https://www.figma.com/file/S39H0B1LOnaVICIUiApFTfoP/_Style-Guide---Desktop---Style-Guide)
-  * [Guía Mobile 1](https://www.figma.com/file/00VTwmTNvLVaBLkxrMFbT8/Google-Material-Design)
-  * [Guía Mobile 2](https://www.figma.com/file/O2Xraz3mraQHvevNsicMl91V/ejemplos-2)
-* Guardar la data de los visitantes de forma remota usando [Firebase](https://firebase.google.com/).
-* A nivel de arquitectura:
-  * El uso de Firebase implica que debes trabajar bajo una arquitectura
-    serverless.
-  * Te sugerimos que desacoples el proyecto en componentes y manejo de estados
-    para que trabajes de forma ordenada y facilite la implementación de tus
-    tests. Revisa la [charla](https://www.youtube.com/watch?v=g_BxnUJTUSk) y
-    el [blog post](https://medium.com/laboratoria-developers/arquitectura-de-interfaces-web-parte-1-a41053c2a1f2)
-    de Lupo sobre este tema ;)
-
-### 3. Tiempo
-
-Tendrán 1 semana para trabajar en este proyecto. Este tiempo es un poco corto
-para iterar y hacer las ceremonias que usualmente hacemos. Puedes elegir hacer
-tus sprints de 2-3 días o simplemente correr un único sprint con "hitos" durante
-la semana. Es decisión del equipo. Lo que sí les recomendamos es asegurar que
-usan bien los dailys, esto les permitirá hacer "mini" iteraciones cada 24 horas.
-
-## Entregables obligatorios
-
-Los criterios mínimos de aceptación para considerar que has completado este
-proyecto son:
-
-### Diseño
-
-1. Haber realizado y documentado (con fotos, videos, aprendizajes, etc.)  al
-   menos 3 entrevistas con usuarios diferentes.
-2. Haber probado de "cliente incógnito" el registro de visitas en WeWork y
-   compararla con tu solución y con la referencia que te brindaron ([Envoy](https://envoy.com/)).
-3. Entregar un prototipo clickeable de alta fidelidad hecho en [Figma](https://www.figma.com/)
-   u otro editor gráfico como Illustrator, Photoshop, PowerPoint, Keynote, etc.
-   linkeado con [Marvel](https://marvelapp.com/) / [Invision](https://www.invisionapp.com/).
-4. Haber hecho y documentado (con fotos, videos, aprendizajes, lista de cambios
-   realizados, etc.) sesiones de testing del prototipo con usuarios.
-
-### Implementación
-
-Tu producto final debe estar desplegado en la web y, como mínimo, debe:
-
-1. Permitir al usuario visitante registrarse con sus datos personales,
-   incluyendo su foto.
-2. Permitir al usuario visitante seleccionar a la persona a quien viene a
-   visitar.
-3. Notificar a la persona a quien vienen a visitar. Para esto te recomendamos
-   revisar:
-   * Los servicios de [Sendgrid](https://sendgrid.com/)
-   * El [API de Mandrill](https://mandrillapp.com/docs/) para mandar correos de
-     forma automática
-   * El [API de notificaciones de HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/notification)
-4. Permitir al usuario administrador visualizar la data de los visitantes,
-   incluyendo la fecha y hora de registro de cada uno
-5. Los tests unitarios deben cubrir un mínimo del 70% de statements, functions y
-   lines, y un mínimo del 50% de branches.
-
-### Presentación
-
-Deberás hacer dos presentaciones ante un jurado que te dará feedback
-inmediatamente. La primera será a mitad de semana para compartir tu avance y la
-segunda será al final de la semana para compartir tu producto final.
-
-Las reglas para las dos presentaciones son:
-
-1. Tendrás 3 minutos de presentación, ni un segundo más.
-2. Habrán 2 minutos para preguntas del jurado.
-3. Te recomendamos que la mayoría del tiempo lo enfoque en demostrar cómo se
-   utiliza tu producto, el cual debe estar desplegado en la web.
-   * NO se permite presentar cosas en tu local ni videos previamente grabados.
-   * NO inviertas tiempo presentándote, ni listando al equipo, ni dando una
-     introducción que ya el jurado conoce. Como al hacer el producto, en la
-     presentación también debes priorizar qué decir.
-   * NO utilices slides de powerpoint, enfócate en presentar tu DEMO.
-   * Durante el DEMO, enfócate en narrar y explicar el valor que tu producto le
-     brinda al usuario.
-   * Cuida tu lenguaje no verbal; recuerda mirar al público y tener un tono de
-     voz adecuado para que toda la audiencia te pueda escuchar.
-   * Idealmente debe presentar una sola integrante del equipo. Si deciden que
-     presenta más de una persona, asegúrense de haber coordinado bien el flujo
-     de la presentación.
-
-## Hacker edition
-
-Features/características extra sugeridas:
-
-* Como el WiFi a veces es nuestro peor enemigo, ¿es posible que tu aplicación
-  pueda, sin Internet, registrar los datos del visitante, guardar los datos
-  localmente y cuando tenga Internet mandarlos a la base de datos? Si te animas
-  a hacer esto dale una revisada a los siguientes recursos:
-  * [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
-  * [Offline first manifesto](http://offlinefirst.org/)
-* También sería ideal poder registrar la firma del visitante en el registro.
-* Sería genial también permitir generar un "pase" para el visitante, así
-  fácilmente a la vista se sabe quién está de visita.
-* Al administrador le interesa tener un dashboard de "analíticas" de los
-  visitantes: # de visitantes por día, horarios frecuentes de visita, a quién
-  vienen a visitar, etc.
-
-## Anexo I: Construyendo un MVP
-
-Una modelo mental común para representar el desarrollo de productos es
-visualizarlo como una pirámide: el producto que construyes consiste en una serie
-de funcionalidades que le dan beneficios al usuario, los cuales le generan
-valor. El detalles está en que no todas las funcionalidades que creas le agregan
-la misma cantidad de valor al usuario. Es más, muchas funcionalidades le agregan
-cero valor. Son cosas que creemos que generan valor, pero que no terminan
-haciéndolo (recuerda que vivimos en un mundo incierto, donde no podemos
-predecir). Por lo tanto, al definir tu producto mínimo viable (MVP), tu misión
-es crear las mínimas funcionalidades que maximicen el valor que entregas. Menos
-es más ;)
-
-![Construyendo un MVP](https://lh5.googleusercontent.com/Y0pAAgnYJcYs0DCK2vo28H0709vIJ4OvMkGs5P1xCS4_6k3XQS0jqOA3KQLKsFX1SrCcOqab9jMwuTCRZVATELmlhFr5VihRIrftA5Fj8q0PFQ8JDoktKfHTrZX5CG4ASzv7vyxL)
-
-## Anexo II: Envío de emails
-
-Para poder hacer envíos de email necesitas un servicio. Aquí te dejamos un
-acceso a una cuenta de [Mandrill](https://mandrillapp.com/) de Laboratoria para
-que la puedas utilizar en tu proyecto.
-
-```text
-Host: smtp.mandrillapp.com
-Port: 587
-SMTP Username: Laboratoria.La
-SMTP Password: Te lo daremos antes de comenzar
-```
+# TESTEO CON USUARIOS
+En esta etapa probamos nuestros prototipos con usuarios para obtener su feedback.
