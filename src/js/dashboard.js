@@ -36,11 +36,11 @@ const getTimeToDate = (time) => {
   let month = timeToDate.getMonth() + 1;
   let year = timeToDate.getFullYear();
   if (day < 10) {
-    day = '0'+ day;
+    day = '0' + day;
   };
 
   if (month < 10) {
-    month = '0'+ month;
+    month = '0' + month;
   };
 
   timeToDate = `${day} / ${month} / ${year}`;
@@ -65,7 +65,7 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) =
   let timeToDate = getTimeToDate(time);
   let timeToHour = getTimeToHour(time);
 
-  let row = visitorsTable.insertRow(1);
+  let row = visitorsTable.insertRow(0);
   let cellVisitorPhoto = row.insertCell(0);
   let cellVisitorName = row.insertCell(1);
   let cellHostName = row.insertCell(2);

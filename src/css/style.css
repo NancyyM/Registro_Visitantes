@@ -82,3 +82,7 @@ margin-bottom: auto;
   width:640px;
   height: 480px;
 }
+
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: rgba(237,233,221,0.3);
+}
