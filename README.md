@@ -247,10 +247,10 @@ Benchmarking
 En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con usuarios para saber si estamos resolviendo sus problemas y satisfaciendo sus necesidades con nuestro producto.
 
   ## Sketch
-![sketchRegistroVisitantes1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchRegistroVisitantes1.jpg?raw=true)
+![sketchRegistroVisitantes1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchRegistroVisitantes1.png?raw=true)
 
   ## Baja Fidelidad
-![bajaFidelidad](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/prototipoBajaFidelidad.png?raw=true)
+![bajaFidelidad](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/prototipoBajaFidelidad.jpg?raw=true)
 
   ## Alta Fidelidad
 
