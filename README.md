@@ -90,7 +90,7 @@ El cliente necesita solucionar dos problemas principales:
 
   - Menor riesgo de plagio y/o pérdida de información valiosa, ya que al hacer uso de papeletas estan mas expuestos a la perdida de información, ya que se manejan datos personales sensibles
 
-  ## Conociendontrevistas con usuarios para sintetizar una experiencia placentera hahace jaj lskakka
+  ## Conociendo a los Usuarios.
 Se hizo una investigación a 3 coworkings en la Ciudad de México.
 
   ### WeWork.
@@ -107,14 +107,16 @@ Una vez que se llenaban todos los campos se otorgaba el acceso al edificio. El s
 
 Especialmente en el piso 11, se encontraban dos chicas recepcionistas, la primera indicación que dieron fue que avanzara hacia la tableta para registrarme, la cual estaba aproximadamente 4 metros adelante de ellas y del mostrador. 
 
-Se prosiguió al proceso de registro donde se encontraba una tableta en forma horizontal, la plataforma contába con una página de bienvenida, seguidamente se encontraba el formulario donde se solicitaba llenar los siguientes datos:
+Se prosiguió al proceso de registro donde se encontraba una tableta en forma horizontal, la plataforma contába con una página de bienvenida. 
+
+![wework](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/wework.png?raw=true)
+
+Seguidamente se encontraba el formulario donde se solicitaba llenar los siguientes datos:
   - Nombre
   - Apellido
   - Toma de fotografía
   - Persona que se visita
 Al finalizar el ingreso de los datos, el sistema arrojaba un mensaje de que el proceso había sido exitoso y que el inquilino visitado había sido notificado de la visita.
-
-![wework](http://UX_images/wework.png);
 
 Cabe resaltar que me mantuve aproximadamente 40 minutos observando a las visitas que llegaban. Estas fueron algunas de mis observaciones:
 
@@ -130,6 +132,15 @@ Cabe resaltar que me mantuve aproximadamente 40 minutos observando a las visitas
 
   ### El Tercer Espacio
 Antes de acudir al citado coworking, se pidió a la coach Paulina facilitarnos una cita con la persona responsable de recepción, al llegar al lugar llamamos al interfón y la encargada nos otorgó acceso cuando le dijimos que teníamos cita. Subimos al 4° piso donde se encontraba Karla en la puerta esperándonos. 
+
+Durante la entrevista (audio aqui) Karla nos explicó en que consistía su sistema de registro de visitas.
+
+![wework](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/wework.png?raw=true)
+
+Comentó que se trata de papeletas y bolígrafo, de donde obtiene los siguientes datos de los usuarios que visitan el lugar:
+
+
+
 Se observó lo siguiente:
 
   - Contába con un bolígrafo y papeletas para el registro, sin embargo ni Karla ni su compañera de recepción nos solicitaron registrarnos en la papeleta.
@@ -140,7 +151,7 @@ Se observó lo siguiente:
   Karla prosiguió a otorgarnos una entrevista (aquí audio)
 
   ### Terminal 1
-
+![registro_terminal1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/registro_terminal1.png?raw=true)
 
 
 
@@ -206,3 +217,81 @@ Balsamiq
 
 # TESTEO CON USUARIOS
 En esta etapa probamos nuestros prototipos con usuarios para obtener su feedback.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Analizando diferentes metodologias
+
+### DESIGN THINKING - HUMAN CENTERED DESIGN
+Es una metodología para generar ideas innovadoras que centra su eficacia en entender y dar solución a las necesidades reales de los usuarios. Se empezó a desarrollar de forma teórica en la Universidad de Stanford en California (EEUU) a partir de los años 70, y su primera aplicabilidad con fines lucrativos como "Design Thinking" la llevó a cabo la consultora de diseño IDEO, siendo hoy en día su principal precursora.
+
+Fases del proceso:
+
+Empatizar
+Definir
+Idear
+Prototipar
+Testear
+
+La experimentación en el design thinking se basa en siempre mostrarle algo (un prototipo) al usuario para obtener su feedback
+
+
+### LEAN STARTUP
+Esta metodología se enfoca en crear un MVP rápidamente para poder aprender de los usuarios y poder evolucionar o corregir el producto. Su ideal es tener la mayor cantidad de “validated learning” con el menor esfuerzo posible.
+
+Minimum: utilizando el menor esfuerzo y recursos
+Viable: el mínimo estado del “producto” que permita coleccionar información (feedback)
+Product: cualquier cosa que se pueda vender (producto, servicio, app, idea) o que quieras que el usuario se inscriba
+
+### LEAN UX
+Lean UX combina ideas de design thinking, lean startup y agile en el campo del UX. Busca hacer el trabajo de UX más rápido, enfocándose más en los resultados que en los “entregables”.
+
+Fases:
+
+Declarar supuestos
+Crear un MVP
+Realizar experimentos
+Obtener feedback
+
+### DESIGN SPRINTS
+Metodología creada en GV (Google Ventures) que busca probar una idea en 5 días. Dentro del proceso se sugiere que el equipo que participa el design sprint tenga como máximo 7 personas y que dentro de este número estén incluidos uno o dos decisores. Al final de los 5 días se tiene uno o más prototipos probados con 5 usuarios reales.
+
+Etapas del proceso:
+
+Lunes: Mapear
+Martes: Sketchear
+Miércoles: Decidir
+Jueves: Prototipar
+Viernes: Testeara
+Puedes ver también como en Gimlet Media crearon y validaron un prototipo usando esta metodología
