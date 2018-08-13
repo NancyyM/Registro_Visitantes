@@ -10,8 +10,9 @@
     "htmlhint": "htmlhint src/*.html   src/views/*.html test/*.html",
     "eslint": "eslint --ext .js src/ src/js/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "build": "babel src -d lib",
-    "test": "jest --coverage"
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js && nyc report --reporter=html",
+    "test": "npm run test-node && npm run test-browser"
   },
   "repository": {
     "type": "git",

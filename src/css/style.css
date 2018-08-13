@@ -2,7 +2,7 @@ html {
   height: 100vh;
 }
 
-#initial-view {
+.initial-view {
 margin-top: 10%;
 margin-bottom: auto;
 }
@@ -14,7 +14,7 @@ margin-bottom: auto;
 
 .head-card {
   background:#f8f9fa;
-  height: 12vh;
+  /* height: 12vh; */
   padding: 10px;
 }
 
