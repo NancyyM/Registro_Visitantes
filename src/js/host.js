@@ -97,19 +97,28 @@ document.getElementById('return-button-host').addEventListener('click', () => {
 });
 
 document.getElementById('next-button-host').addEventListener('click', () => {
-  let visitorObject = createVisitorObject();
-  sendVisitorInfoToFirebase(visitorObject);
-  document.getElementById('host-body').innerHTML = '';
-  swal(
-    'Gracias',
-    `${visitorObject.host.hostName} ha sido notificado de tu llegada.
-    Por favor espera en el área de recepción`,
-    'success'
-  ).then((result) => {
-    if (result.value) {
-      window.location.assign('../index.html');
-    }
-  });
+  let hostName = document.getElementById('input-host-name').value.trim();
+  if (hostName !== null && hostName !== '' && hostName.length > 3) {
+    let visitorObject = createVisitorObject();
+    sendVisitorInfoToFirebase(visitorObject);
+    document.getElementById('host-body').innerHTML = '';
+    swal(
+      'Gracias',
+      `${visitorObject.host.hostName} ha sido notificado de tu llegada.
+      Por favor espera en el área de recepción`,
+      'success'
+    ).then((result) => {
+      if (result.value) {
+        sessionStorage.clear();
+        window.location.assign('../index.html');
+      }
+    });
+  } else {
+    swal({
+      text: 'Por favor ingresa a quien visitas'
+    });
+  };
+
 });
 
 const sendVisitorInfoToFirebase = (visitorObject) => {
