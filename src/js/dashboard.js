@@ -30,20 +30,37 @@ exit.addEventListener('click', (event) => {
   };
 });
 
+const getTimeToDate = (time) => {
+  let timeToDate = new Date(time);
+  let day = timeToDate.getDate();
+  let month = timeToDate.getMonth() + 1;
+  let year = timeToDate.getFullYear();
+  if (day < 10) {
+    day = '0'+ day;
+  };
+
+  if (month < 10) {
+    month = '0'+ month;
+  };
+
+  timeToDate = `${day} / ${month} / ${year}`;
+  return timeToDate;
+};
+
 const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) => {
-  console.log(date, visitor, hostCompany, hostName, status);
   let visitorsTable = document.getElementById('visitors-table');
   const time = date;
-  const timeToDate = new Date(time).toDateString();
-  // let table = document.getElementById("myTable");
+  let timeToDate = getTimeToDate(time);
+
   let row = visitorsTable.insertRow(1);
-  let cellVisitorName = row.insertCell(0);
-  let cellHostName = row.insertCell(1);
-  let cellHostCompany = row.insertCell(2);
-  let cellIn = row.insertCell(3);
-  let cellOut = row.insertCell(4);
-  let cellDate = row.insertCell(5);
-  let cellStatus = row.insertCell(6);
+  let cellVisitorPhoto = row.insertCell(0);
+  let cellVisitorName = row.insertCell(1);
+  let cellHostName = row.insertCell(2);
+  let cellHostCompany = row.insertCell(3);
+  let cellIn = row.insertCell(4);
+  let cellOut = row.insertCell(5);
+  let cellDate = row.insertCell(6);
+  let cellStatus = row.insertCell(7);
 
   cellVisitorName.innerHTML = `${visitor}`;
   cellHostName.innerHTML = `${hostName}`;
@@ -67,7 +84,6 @@ const getVisitorOfFirebase = () => {
     // visitorTable.innerHTML = '';
     const dataVisitor = snapshot.val();
     for (let key in dataVisitor) {
-      console.log(dataVisitor[key]);
       addVisitor(key, dataVisitor[key]);
     }
   });
