@@ -247,7 +247,8 @@ Benchmarking
 En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con usuarios para saber si estamos resolviendo sus problemas y satisfaciendo sus necesidades con nuestro producto.
 
   ## Sketch
-![sketchBienvenido](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchBienvenido.jpg?raw=true)![sketchTusDatos](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchTusDatos.png?raw=true)![sketchFotografia1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchFotografia1.png?raw=true)![sketchFotografia2](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchFotografia2.png?raw=true)![sketchPersonaQueBuscas](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchPersonaQueBuscas.png?raw=true)![sketchSelectPersona](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchSelectPersona.png?raw=true)![sketchMensajeAviso](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchMensajeAviso.png?raw=true)
+![sketchRegistroVisitantes1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchRegistroVisitantes1.jpg?raw=true)
+
   ## Baja Fidelidad
 ![bajaFidelidad](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/prototipoBajaFidelidad.png?raw=true)
 
