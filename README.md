@@ -1,3 +1,5 @@
+prototipo alta fidelidad: https://marvelapp.com/e759949/screen/46630471
+
 ## PREÁMBULO
 El proceso de registro de visitas en algunas de las empresas en América Latína es un proceso tedioso y manual, tomando en cuenta todo el avance tecnológico que se ha logrado en estos últimos años. Las personas cada vez viven con mas prisa y no quieren perder minutos valiosos de su tiempo en largas filas o formularios engorrosos.
 Un coworking, que es una forma de trabajo en donde profesionales independientes, emprendedores, freelance y pequeñas empresas (pymes) comparten un espacio laboral físico, se caracteriza por alojar principalmente a empresas tecnológicas, novedosas, con una idea de negocio que gira entorno al mundo digital, este tipo de lugares permite que varias empresas u organismos trabajen en un mismo espacio, de tal manera que puedan cooperar entre si y ayudarse mutuamente.
