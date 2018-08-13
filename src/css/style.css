@@ -2,7 +2,11 @@ html {
   height: 100vh;
 }
 
-#initial-view {
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.initial-view {
 margin-top: 10%;
 margin-bottom: auto;
 }
@@ -14,7 +18,7 @@ margin-bottom: auto;
 
 .head-card {
   background:#f8f9fa;
-  height: 12vh;
+  /* height: 12vh; */
   padding: 10px;
 }
 
@@ -72,13 +76,22 @@ margin-bottom: auto;
   color: #007bff;
 }
 .table{
-  margin-top: 5%;
-}
-.thead-ligth{
-  background:#f8f9fa
+  margin: 5% auto;
+  border: 1px solid black;
+  width: 80%;
 }
 
 #snapshot{
   width:640px;
   height: 480px;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: rgba(237,233,221,0.3);
+}
+
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }

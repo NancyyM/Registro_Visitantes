@@ -151,7 +151,7 @@ const createVisitorObject = () => {
   let visitorInfo = {
     'visitor': getDataVisitor(),
     'host': getDataHost(),
-    'status:': 'pendiente'
+    'status': 'pendiente'
   };
   return visitorInfo;
 };

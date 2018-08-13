@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Co-Working | Administración</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <section class="container text-center" id="initial-view">
+  <section class="container text-center initial-view" id="initial-view">
     <div id="logIn">
       <h1>Bienvenid@</h1>
       <div class="row">
@@ -33,35 +34,24 @@
     </div>
   </section>
   <section>
-    <div id="table" class="table-responsive" style="display:none">
+    <div id="table" class="table-responsive">
       <div class="card text-center head-card align-middle">
         <h1>Registro de visitas</h1>
       </div>
-      <table class="table">
-        <thead class="thead-ligth">
+      <table class="table table-striped" >
+        <thead class="thead-dark">
           <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">A quien visita</th>
-            <th scope="col">Compañia</th>
-            <th scope="col">Hora de ingreso</th>
-            <th scope="col">Hora de salida</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Status</th>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>A quien visita</th>
+            <th>Compañia</th>
+            <th>Hora de ingreso</th>
+            <th>Fecha</th>
+            <th>Status</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Ana</td>
-            <td>Citlalli</td>
-            <td>Laboratoria</td>
-            <td>8:00 pm</td>
-            <td> </td>
-            <td>11//08/2018</td>
-            <td>Ingresó</td>
-          </tr>
-          <tr>
-            <td>Nancy</td>
-          </tr>
+        <tbody id="visitors-table">
+          <!-- Space for dynamic table -->
         </tbody>
       </table>
     </div>
@@ -79,6 +69,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
   <script src="../js/dashboard.js"></script>
 </body>
 
