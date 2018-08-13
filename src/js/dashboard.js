@@ -59,11 +59,25 @@ const getTimeToHour = (time) => {
   return timeToHour;
 };
 
-const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) => {
+const getUrl = (url) => {
+  return url;
+};
+
+// const getVisitorPhoto = (key) =>{
+//   let photoRef = firebase.storage().ref(`visitorPhotos/${key}`);
+//   photoRef.getDownloadURL().then((url)=>{
+//     let photoUrl = url;
+//     getUrl(photoUrl);
+//   });
+//   console.log(getUrl);
+// };
+
+const createNewVisitorElement = (date, visitor, hostCompany, hostName, status, photoUrl) => {
   let visitorsTable = document.getElementById('visitors-table');
   const time = date;
   let timeToDate = getTimeToDate(time);
   let timeToHour = getTimeToHour(time);
+  let visitorPhoto = photoUrl;
 
   let row = visitorsTable.insertRow(0);
   let cellVisitorPhoto = row.insertCell(0);
@@ -74,6 +88,7 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) =
   let cellDate = row.insertCell(5);
   let cellStatus = row.insertCell(6);
 
+  cellVisitorPhoto.innerHTML = `<img src="${visitorPhoto}" class="avatar">`;
   cellVisitorName.innerHTML = `${visitor}`;
   cellHostName.innerHTML = `${hostName}`;
   cellHostCompany.innerHTML = `${hostCompany}`;
@@ -83,16 +98,16 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status) =
 };
 
 const addVisitor = (key, visitorCollection) => {
-  const visitorItem = createNewVisitorElement(visitorCollection.date, visitorCollection.visitor, visitorCollection.host.hostCompany, visitorCollection.host.hostName, visitorCollection.status);
-  // listItem.setAttribute('data-keypost', key);
-  // postList.insertBefore(listItem, postList.childNodes[0]);
-  // bindPostEvents(listItem);
+  let photoRef = firebase.storage().ref(`visitorPhotos/${key}`);
+  photoRef.getDownloadURL().then((url)=>{
+    let photoUrl = url;
+    createNewVisitorElement(visitorCollection.date, visitorCollection.visitor, visitorCollection.host.hostCompany, visitorCollection.host.hostName, visitorCollection.status, photoUrl);
+  });
 };
 
 const getVisitorOfFirebase = () => {
   refVisitor.on('value', (snapshot) => {
     let visitorsTable = document.getElementById('visitors-table');
-    // visitorTable.innerHTML = '';
     const dataVisitor = snapshot.val();
     for (let key in dataVisitor) {
       addVisitor(key, dataVisitor[key]);
