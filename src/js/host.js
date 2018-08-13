@@ -99,6 +99,17 @@ document.getElementById('return-button-host').addEventListener('click', () => {
 document.getElementById('next-button-host').addEventListener('click', () => {
   let visitorObject = createVisitorObject();
   sendVisitorInfoToFirebase(visitorObject);
+  document.getElementById('host-body').innerHTML = '';
+  swal(
+    'Gracias',
+    `${visitorObject.host.hostName} ha sido notificado de tu llegada.
+    Por favor espera en el área de recepción`,
+    'success');
+  // ).then((result) => {
+  //   if (result.value) {
+  //     window.location.assign('../index.html');
+  //   }
+  // });
 });
 
 const sendVisitorInfoToFirebase = (visitorObject) => {
