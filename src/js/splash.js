@@ -2,8 +2,8 @@
 const body = document.getElementById('splash');
 
 // Print DOM for splash page
-body.innerHTML = `  <main class="container text-center">
-<div class="row middle">
+body.innerHTML = `  <main class="container text-center centered-view">
+<div class="row">
   <div class="col-2 vertical-center">
     <button type="button" class="btn btn-default btn-circle btn-xl" id="return-button-splash">
       <i class="fas fa-chevron-left"></i>
