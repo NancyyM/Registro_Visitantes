@@ -1,7 +1,8 @@
 const btnLogin = document.getElementById('init-button');
 const logIn = document.getElementById('logIn');
-const table = document.getElementById('table');
+const tableContainer = document.getElementById('table-container');
 const close = document.getElementById('close');
+const buttonCloseRow = document.getElementById('button-row');
 const exit = document.getElementById('logOut');
 const initView = document.getElementById('initial-view');
 let refVisitor;
@@ -10,24 +11,34 @@ btnLogin.addEventListener('click', event => {
   let admin = document.getElementById('user-admin').value;
   let password = parseInt(document.getElementById('admin-password').value);
   if (admin === 'user' && password === 1234) {
-    // logIn.classList.add('hide');
     initView.classList.add('hide');
     table.style.display = 'block';
-    close.classList.remove('hide');
-    close.style.display = 'block';
+    tableContainer.classList.remove('hide');
+    buttonCloseRow.classList.remove('hide');
     init();
   } else {
     swal({
       type: 'error',
       title: 'Error',
-      text: 'Datos incorrectos'});
+      text: 'Datos incorrectos'
+    });
   }
 });
 
 exit.addEventListener('click', (event) => {
-  if (confirm('¿Estás segur@ que quieres salir?')) {
-    window.location.reload();
-  };
+  swal({
+    title: '¿Estás segur@ que quieres salir?',
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#231F20',
+    cancelButtonColor: '#F8BB86',
+    confirmButtonText: 'Si',
+    cancelButtonText: 'No'
+  }).then((result) => {
+    if (result.value) {
+      window.location.reload();
+    }
+  });
 });
 
 const getTimeToDate = (time) => {
@@ -43,7 +54,7 @@ const getTimeToDate = (time) => {
     month = '0' + month;
   };
 
-  timeToDate = `${day} / ${month} / ${year}`;
+  timeToDate = `${day}/${month}/${year}`;
   return timeToDate;
 };
 
@@ -62,15 +73,6 @@ const getTimeToHour = (time) => {
 const getUrl = (url) => {
   return url;
 };
-
-// const getVisitorPhoto = (key) =>{
-//   let photoRef = firebase.storage().ref(`visitorPhotos/${key}`);
-//   photoRef.getDownloadURL().then((url)=>{
-//     let photoUrl = url;
-//     getUrl(photoUrl);
-//   });
-//   console.log(getUrl);
-// };
 
 const createNewVisitorElement = (date, visitor, hostCompany, hostName, status, photoUrl) => {
   let visitorsTable = document.getElementById('visitors-table');
@@ -99,7 +101,7 @@ const createNewVisitorElement = (date, visitor, hostCompany, hostName, status, p
 
 const addVisitor = (key, visitorCollection) => {
   let photoRef = firebase.storage().ref(`visitorPhotos/${key}`);
-  photoRef.getDownloadURL().then((url)=>{
+  photoRef.getDownloadURL().then((url) => {
     let photoUrl = url;
     createNewVisitorElement(visitorCollection.date, visitorCollection.visitor, visitorCollection.host.hostCompany, visitorCollection.host.hostName, visitorCollection.status, photoUrl);
   });

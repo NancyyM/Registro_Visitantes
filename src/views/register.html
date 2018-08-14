@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Co-Working | Registro</title>
+  <link rel="shortcut icon" href="../img/favicon-196x196.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -13,28 +15,30 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="background-cream">
 
-  <header class="card text-center head-card align-middle">
+  <header class="text-center head-card align-middle background-grey">
     <h1> Compártenos tus datos: </h1>
   </header>
 
-  <div class="progress">
-    <div class="determinate b"></div>
-  </div>
-  <div class="block1 active a"> 1 </div>
-  <div class="block2 a"> 2 </div>
-  <div class="block3 a"> 3 </div>
-  <div class="block4 a"> 4 </div>
-
   <main class="container text-center">
+    <section class="row">
+      <div class="container">
+        <ul class="progressbar">
+          <li class="active-step"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
     <div class="row middle">
-      <div class="col-2">
-        <button type="button" class="btn btn-default btn-circle btn-xl" id="return-button">
+      <div class="col-2 center">
+        <button type="button" class="btn btn-default btn-circle btn-xl position-center background-grey" id="return-button">
           <i class="fas fa-chevron-left"></i>
         </button>
       </div>
-      <div class="col-8">
+      <div class="col-8 center">
         <div class="form-group">
           <input type="text" class="form-control" name="name" id="input-name" placeholder="Ingresa tu nombre">
         </div>
@@ -42,8 +46,8 @@
           <input type="text" class="form-control" name="lastname" id="input-lastname" placeholder="Ingresa tu apellido" disabled>
         </div>
       </div>
-      <div class="col-2">
-        <button type="button" class="btn btn-default btn-circle btn-xl hide" id="next-button">
+      <div class="col-2 center">
+        <button type="button" class="btn btn-default btn-circle btn-xl hide position-center background-grey" id="next-button">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>

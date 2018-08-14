@@ -89,7 +89,7 @@ const activateButton = (hostName) => {
 };
 
 const clearList = () => {
-  document.querySelector('section').innerHTML = '';
+  document.querySelector('section.container').innerHTML = '';
 };
 
 document.getElementById('return-button-host').addEventListener('click', () => {
@@ -98,16 +98,17 @@ document.getElementById('return-button-host').addEventListener('click', () => {
 
 document.getElementById('next-button-host').addEventListener('click', () => {
   let hostName = document.getElementById('input-host-name').value.trim();
+  document.getElementById('host-body').innerHTML = '';
+
   if (hostName !== null && hostName !== '' && hostName.length > 3) {
     let visitorObject = createVisitorObject();
     sendVisitorInfoToFirebase(visitorObject);
-    document.getElementById('host-body').innerHTML = '';
-    swal(
-      'Gracias',
-      `${visitorObject.host.hostName} ha sido notificado de tu llegada.
-      Por favor espera en el área de recepción`,
-      'success'
-    ).then((result) => {
+    swal({
+      title: 'Gracias',
+      text: `${visitorObject.host.hostName} recibirá una notificación de tu llegada`,
+      type: 'success',
+      confirmButtonColor: '#231F20'
+    }).then((result) => {
       if (result.value) {
         sessionStorage.clear();
         window.location.assign('../index.html');

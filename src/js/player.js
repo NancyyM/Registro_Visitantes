@@ -41,7 +41,7 @@ const takePhoto = () => {
   });
 
   captureButton.classList.remove('take-photo');
-  captureButton.innerHTML = 'Volver a tomarla';
+  captureButton.innerHTML = 'Tomar otra';
   captureButton.classList.add('retake-photo');
 };
 

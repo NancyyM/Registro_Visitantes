@@ -6,16 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Co-Working | Administración</title>
+  <link rel="shortcut icon" href="../img/favicon-196x196.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
-  <section class="container text-center initial-view" id="initial-view">
+<body class="background-cream">
+  <section class="container text-center centered-view" id="initial-view">
     <div id="logIn">
-      <h1>Bienvenid@</h1>
+      <h1>PANEL DE ADMINISTRACIÓN</h1>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <img src="../img/header-logo.svg" alt="logo_coworking" id="logo-coworking">
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12">
           <div class="form-group">
@@ -33,12 +41,23 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="table-container" class="hide">
     <div id="table" class="table-responsive">
-      <div class="card text-center head-card align-middle">
+      <div class="background-grey text-center head-card align-middle">
         <h1>Registro de visitas</h1>
       </div>
-      <table class="table table-striped" >
+
+      <section id="button-row" class="hide">
+        <div class="close" id="close">
+          <div class="row-dashboard">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-sm" id="logOut" name="logOut">Cerrar sesión</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <table class="table table-striped">
         <thead class="thead-dark">
           <tr>
             <th>Foto</th>
@@ -54,15 +73,6 @@
           <!-- Space for dynamic table -->
         </tbody>
       </table>
-    </div>
-  </section>
-  <section>
-    <div class="close hide" id="close">
-      <div class="row">
-        <div class="col-12">
-          <button type="button" class="btn btn-primary btn-lg" id="logOut" name="logOut">Cerrar sesión</button>
-        </div>
-      </div>
     </div>
   </section>
 
