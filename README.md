@@ -1,3 +1,5 @@
+prototipo alta fidelidad: https://marvelapp.com/e759949/screen/46630471
+
 ## PREÁMBULO
 El proceso de registro de visitas en algunas de las empresas en América Latína es un proceso tedioso y manual, tomando en cuenta todo el avance tecnológico que se ha logrado en estos últimos años. Las personas cada vez viven con mas prisa y no quieren perder minutos valiosos de su tiempo en largas filas o formularios engorrosos.
 Un coworking, que es una forma de trabajo en donde profesionales independientes, emprendedores, freelance y pequeñas empresas (pymes) comparten un espacio laboral físico, se caracteriza por alojar principalmente a empresas tecnológicas, novedosas, con una idea de negocio que gira entorno al mundo digital, este tipo de lugares permite que varias empresas u organismos trabajen en un mismo espacio, de tal manera que puedan cooperar entre si y ayudarse mutuamente.
@@ -45,7 +47,7 @@ Identificamos tres potenciales usuarios.
   Tipos de Usuario:
   - Postulantes a puestos de empleo: Acuden a entrevistas de trabajo.
   - Visitantes: Acuden a solicitar informes, a reunirse con algún amigo y/o familiar.
-  - Mensajeros: Acuden a dejar paquetería.
+  - Mensajeros: Acuden a entregar paquetería.
   - Posibles Contratantes: Acuden a pedir información con el objetivo de contratar un espacio de trabajo para su empresa.
 
   
@@ -91,7 +93,7 @@ El cliente necesita solucionar dos problemas principales:
   - Menor riesgo de plagio y/o pérdida de información valiosa, ya que al hacer uso de papeletas estan mas expuestos a la perdida de información, ya que se manejan datos personales sensibles
 
   ## Conociendo a los Usuarios.
-Se hizo una investigación a 3 coworkings en la Ciudad de México.
+Se hizo una investigación a 3 coworkings en la Ciudad de México, Para conocer el sistemas de registro que utilizan.
 
   ### WeWork.
 Ingresando de cliente incógnito se pudo conocer el sistema que utilizan para manejar el registro de sus visitas. 
@@ -104,6 +106,8 @@ Al ingresar, en la planta baja se encontraban dos vigilantes, que indicaban hace
   - Hora de salida
   - Firma
 Una vez que se llenaban todos los campos se otorgaba el acceso al edificio. El segundo vigilante era el que con su tarjeta de acceso permitía ingresar por los torniquetes.
+
+
 
 Especialmente en el piso 11, se encontraban dos chicas recepcionistas, la primera indicación que dieron fue que avanzara hacia la tableta para registrarme, la cual estaba aproximadamente 4 metros adelante de ellas y del mostrador. 
 
@@ -135,11 +139,18 @@ Antes de acudir al citado coworking, se pidió a la coach Paulina facilitarnos u
 
 Durante la entrevista (audio aqui) Karla nos explicó en que consistía su sistema de registro de visitas.
 
-![3espacio](https://github.com/NancyyM/3espacio/blob/master/UX_images/registro_3espacio.png?raw=true)
+![registro_3espacio](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/registro_3espacio.jpg?raw=true)
 
 Comentó que se trata de papeletas y bolígrafo, de donde obtiene los siguientes datos de los usuarios que visitan el lugar:
 
-
+  - Nombre del visitante
+  - Empresa del visitante
+  - Persona que busca
+  - Empresa que busca
+  - Fecha
+  - Hora de llegada
+  - Hora de salida
+  - Firma
 
 Se observó lo siguiente:
 
@@ -153,31 +164,67 @@ Se observó lo siguiente:
   ### Terminal 1
 ![registro_terminal1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/registro_terminal1.png?raw=true)
 
+  ## Entrevistas
 
+
+
+  ## Historias de Usuario.
+
+  ### Administradores
+
+  - Yo como recepcionista quisiera tener un sistema de registro 
+  - Yo como recepcionista quiero poder
+  - Yo como personal de seguridad espero
+
+  ### Visitantes
+
+  - Yo como visitante de coworking quiero poder registarme antes de obtener acceso, de manera sencilla y rápida para no 
+  - Yo como postulante a puesto de empleo en un coworking, quiero poder registarme de manera rapida para no perder tiempo 
+
+  ### Inquilinos
+
+  - Yo como empleado del coworking quiero serciorarme de que mis datos personales están respaldados en un lugar seguro
 
 
 
 ## INVESTIGANDO Y ANALIZANDO A LA COMPETENCIA
 
 ## Identificando a nuestra competencia
-¿Quienes son mis principales competidores? Son empresas en el ramo de la tecnología
+¿Quienes son mis principales competidores? Son empresas en el ramo de la tecnología. Especialmente en la realización de este proyecto nos hemos centrado en dos principales competidores: Envoy, y la empresa que desarrolló el sistema de registro de visitas para wework
 ¿En que área geográfica se encuentran?
 ¿Cuál es el tamaño de las empresas competidoras y que fortaleza financiera tienen?
 ¿Cuál es la calidad del producto, mercancía o servicios ofrecidos por los competidores actuales y potenciales?
 
-
+  ## Benchmark
 
 
   ## Aprendiendo de nuestra competencia
 
-  ### WeWork
-  
-  ## Aprendiendo de nuestros stakeholders
 
 
 # SINTESIS Y DEFINICION
 En esta fase usamos los datos coleccionados en la fase de investigación y descubrimiento buscando tendencias e insights valiosos para el desarrollo del producto, y entendemos los deseos y necesidades del público al que estará dirigido nuestro producto.
 Algunas de las herramientas que utilizarás durante esta etapa son:
+
+## Puntos de dolor. 
+  -
+  -
+  -
+
+  ### Administradores
+
+  ### Visitantes
+  ### Inquilinos
+
+## Puntos de contacto.
+
+## Puntos de mejora
+
+## Funcionalidades que le agregan valor al usuario.
+
+## Funcionalidades que le restan valor al ususario.
+
+## Insights valiosos
 
 -Diagramas de afinidad
 -User Personas
@@ -201,6 +248,15 @@ Benchmarking
 # PROTOTIPADO
 En esta etapa elaboramos un prototipo que nos permita probar nuestras ideas con usuarios para saber si estamos resolviendo sus problemas y satisfaciendo sus necesidades con nuestro producto.
 
+  ## Sketch
+![sketchRegistroVisitantes1](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/sketchRegistroVisitantes1.png?raw=true)
+
+  ## Baja Fidelidad
+![bajaFidelidad](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/prototipoBajaFidelidad.jpg?raw=true)
+
+  ## Alta Fidelidad
+ver aquí: https://marvelapp.com/e759949/screen/46630471
+
 En esta etapa puedes prototipar de distintas maneras:
 
 Prototipado de contenido
@@ -217,81 +273,3 @@ Balsamiq
 
 # TESTEO CON USUARIOS
 En esta etapa probamos nuestros prototipos con usuarios para obtener su feedback.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Analizando diferentes metodologias
-
-### DESIGN THINKING - HUMAN CENTERED DESIGN
-Es una metodología para generar ideas innovadoras que centra su eficacia en entender y dar solución a las necesidades reales de los usuarios. Se empezó a desarrollar de forma teórica en la Universidad de Stanford en California (EEUU) a partir de los años 70, y su primera aplicabilidad con fines lucrativos como "Design Thinking" la llevó a cabo la consultora de diseño IDEO, siendo hoy en día su principal precursora.
-
-Fases del proceso:
-
-Empatizar
-Definir
-Idear
-Prototipar
-Testear
-
-La experimentación en el design thinking se basa en siempre mostrarle algo (un prototipo) al usuario para obtener su feedback
-
-
-### LEAN STARTUP
-Esta metodología se enfoca en crear un MVP rápidamente para poder aprender de los usuarios y poder evolucionar o corregir el producto. Su ideal es tener la mayor cantidad de “validated learning” con el menor esfuerzo posible.
-
-Minimum: utilizando el menor esfuerzo y recursos
-Viable: el mínimo estado del “producto” que permita coleccionar información (feedback)
-Product: cualquier cosa que se pueda vender (producto, servicio, app, idea) o que quieras que el usuario se inscriba
-
-### LEAN UX
-Lean UX combina ideas de design thinking, lean startup y agile en el campo del UX. Busca hacer el trabajo de UX más rápido, enfocándose más en los resultados que en los “entregables”.
-
-Fases:
-
-Declarar supuestos
-Crear un MVP
-Realizar experimentos
-Obtener feedback
-
-### DESIGN SPRINTS
-Metodología creada en GV (Google Ventures) que busca probar una idea en 5 días. Dentro del proceso se sugiere que el equipo que participa el design sprint tenga como máximo 7 personas y que dentro de este número estén incluidos uno o dos decisores. Al final de los 5 días se tiene uno o más prototipos probados con 5 usuarios reales.
-
-Etapas del proceso:
-
-Lunes: Mapear
-Martes: Sketchear
-Miércoles: Decidir
-Jueves: Prototipar
-Viernes: Testeara
-Puedes ver también como en Gimlet Media crearon y validaron un prototipo usando esta metodología

@@ -128,3 +128,58 @@ hr {
   height: 50px;
   border-radius: 50%;
 }
+.progress{
+  margin-top: 50px;
+  height: 10px;
+  background-color: #EDE9DD;
+}
+.block1,
+.block2,
+.block3,
+.block4 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background-color: #EDE9DD;
+  height: 50px;
+  width: 50px;
+  top: 0px;
+  padding: 4px;
+  margin-top: 30px;
+}
+.block1 {
+  margin-left: 25%;
+}
+.block2 {
+  margin-left: 50%;
+}
+.block3 {
+  margin-left: 75%;
+}
+.block4 {
+  margin-left: 97%;
+}
+.determinate.b {
+  background-color: #231F20;
+  width: 25%;
+}
+.determinate.c {
+  background-color: #231F20;
+  width: 50%;
+}
+.determinate.d {
+  background-color: #231F20;
+  width: 75%;
+}
+.determinate.e {
+  background-color: #231F20;
+  width: 100%;
+}
+.active {
+  background-color: #231F20;
+  color: #EDE9DD;
+}
+.a {
+  margin-top: 110px;
+}

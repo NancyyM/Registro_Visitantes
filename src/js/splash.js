@@ -4,6 +4,17 @@ const body = document.getElementById('splash');
 // Print DOM for splash page
 body.innerHTML = `  <main class="container text-center centered-view">
 <div class="row">
+  <section>
+  <div class="progress">
+    <div class="determinate c"></div>
+  </div>
+  <div class="block1 active"> 1 </div>
+  <div class="block2 active"> 2 </div>
+  <div class="block3"> 3 </div>
+  <div class="block4"> 4 </div>
+  </section>
+  </div>
+<div class="row">
   <div class="col-2 vertical-center">
     <button type="button" class="btn btn-default btn-circle btn-xl" id="return-button-splash">
       <i class="fas fa-chevron-left"></i>
