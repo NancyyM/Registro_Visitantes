@@ -228,11 +228,6 @@ hr {
   margin: 5% 0;
 }
 
-.row {
-  margin-right: 15px;
-  margin-left: -15px;
-}
-
 #employees-list {
   overflow: auto;
   height: 200px;
