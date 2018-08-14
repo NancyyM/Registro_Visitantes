@@ -45,11 +45,15 @@ hr {
 }
 
 .middle {
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .middle-1 {
   margin: auto;
+}
+
+.middle-2 {
+  margin-top: 10%;
 }
 
 .btn-primary {
@@ -140,8 +144,8 @@ hr {
 }
 
 #snapshot{
-  width:640px;
-  height: 480px;
+  width: 472px;
+  height: 354px;
 }
 
 .table-striped tbody tr:nth-of-type(odd){
@@ -217,4 +221,76 @@ hr {
 #logOut {
   float: right;
   margin: 5% 0;
+}
+
+.row {
+  margin-right: 15px;
+  margin-left: -15px;
+}
+
+#employees-list {
+  overflow: auto;
+  height: 200px;
+}
+
+/* Styles for wizard */
+
+.container{
+  width: 100%;
+  margin-top: 3%;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+
+.progressbar li {
+  list-style-type: none;
+  float: left;
+  width: 25%;
+  position: relative;
+  text-align: center;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px solid #231F20;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.progressbar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #231F20;
+  top: 20px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progress li.active-step {
+  color: #231F20;
+}
+
+.progressbar li.active-step:before {
+  border-color: #231F20;
+  background-color: #231F20;
+  color: #ffffff;
+}
+
+.progressbar li.active-step + li:after {
+  background-color: #231F20;
 }

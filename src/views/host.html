@@ -14,26 +14,28 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="host-body">
+<body id="host-body" class="background-cream">
 
 
-  <header class="card text-center head-card align-middle">
+  <header class="text-center head-card align-middle background-grey">
     <h1> ¿A quién visitas? </h1>
   </header>
-  <section>
-    <div class="progress">
-        <div class="determinate e"></div>
-      </div>
-      <div class="block1 active a"> 1 </div>
-      <div class="block2 active a"> 2 </div>
-      <div class="block3 active a"> 3 </div>
-      <div class="block4 active a"> 4 </div>
-  </section>
 
   <main class="container text-center">
-    <div class="row middle">
+    <section class="row">
+      <div class="container">
+        <ul class="progressbar">
+          <li class="active-step"></li>
+          <li class="active-step"></li>
+          <li class="active-step"></li>
+          <li class="active-step"></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="row middle" id="main-content">
       <div class="col-2">
-        <button type="button" class="btn btn-default btn-circle btn-xl" id="return-button-host">
+        <button type="button" class="btn btn-default btn-circle btn-xl background-grey" id="return-button-host">
           <i class="fas fa-chevron-left"></i>
         </button>
       </div>
@@ -45,7 +47,7 @@
         </form>
       </div>
       <div class="col-2">
-        <button type="button" class="btn btn-default btn-circle btn-xl hide" id="next-button-host">
+        <button type="button" class="btn btn-default btn-circle btn-xl hide background-grey" id="next-button-host">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
