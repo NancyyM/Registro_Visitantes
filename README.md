@@ -182,10 +182,6 @@ El proceso de registro de la terminal 1 consiste de papeletas y boligrafo, en la
   - Los visitantes llenan el formulario de su registro a la hora de su ingreso, pero nadie llena el campo de hora de salida, y tampoco lo solicita la recepcionista ni el guardia.
 
 
-  ## Entrevistas
-
-
-
   ## Historias de Usuario.
 
   - Yo como recepcionista quiero tener un sistema de registro eficiente donde pueda indicarle al visitante que realice su registro de forma individual.
@@ -211,11 +207,7 @@ El proceso de registro de la terminal 1 consiste de papeletas y boligrafo, en la
 Considerando que el coworking Terminal 1 aloja a pequeñas y medianas empresas, conideramos importante el tema de los precios del producto, llegando incluso a considerar que el desarrollo de nuestro producto tiene como principal ventaja sobre otros, el tema económico en cuanto a costo.
 
   ## Benchmark
-
-
-  ## Aprendiendo de nuestra competencia
-
-
+![benchmark](https://github.com/NancyyM/Registro_Visitantes/blob/master/UX_images/benchmark.png?raw=true)
 
 
 # SINTESIS Y DEFINICION
