@@ -6,6 +6,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.background-cream {
+  background-color: #EDE9DD;
+}
+
+.background-grey {
+  background-color: #231f20;
+}
+
 #initial-view h1{
   font-size: 2em;
 }
@@ -32,7 +40,7 @@ hr {
 }
 
 .head-card {
-  background:#f8f9fa;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -42,6 +50,23 @@ hr {
 
 .middle-1 {
   margin: auto;
+}
+
+.btn-primary {
+  background-color: #231F20;
+  border-color: #231F20;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #EDE9DD;
+  border-color: #231F20;
+  color: #231F20;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(35,31,32,.5);
 }
 
 .btn-circle.btn-xl {
@@ -62,7 +87,6 @@ hr {
 #return-button-host,
 #next-button-host,
 .log-out {
-  background: #007bff;
   color:#ffffff;
 }
 
@@ -112,6 +136,7 @@ hr {
   margin: 5% auto;
   border: 1px solid black;
   width: 80%;
+  background-color: #ffffff;
 }
 
 #snapshot{
@@ -182,4 +207,14 @@ hr {
 }
 .a {
   margin-top: 110px;
+}
+
+#close {
+  width: 80%;
+  margin: 0 10%;
+}
+
+#logOut {
+  float: right;
+  margin: 5% 0;
 }
